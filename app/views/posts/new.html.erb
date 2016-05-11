@@ -1,5 +1,6 @@
 <h2>New Post</h2>
-<%= form_for :post, url: trips_path do |f| %>
+
+<%= form_for :post, url: trip_posts_path do |f| %>
  
   <% if @trip.errors.any? %>
     <div id="error_explanation">
@@ -21,8 +22,8 @@
   </p>
  
   <p>
-    <%= f.label :location %><br>
-    <%= f.text_field :location %>
+    <%= f.label :content %><br>
+    <%= f.text_field :content %>
   </p>
  
   <p>

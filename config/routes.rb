@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  root to: "pages#index"
+  root to: "trips#index"
   devise_for :users
   get 'profile', to: 'users#show'
 

@@ -17,12 +17,12 @@ ActiveRecord::Schema.define(version: 20160510033603) do
   enable_extension "plpgsql"
 
   create_table "posts", force: :cascade do |t|
-    t.string   "title",      default: "", null: false
+    t.string   "title",      null: false
     t.text     "content"
     t.integer  "trip_id"
     t.string   "photo"
-    t.datetime "created_at",              null: false
-    t.datetime "updated_at",              null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   add_index "posts", ["trip_id"], name: "index_posts_on_trip_id", using: :btree

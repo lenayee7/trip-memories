@@ -3,49 +3,14 @@
 <h2><%= @trip.title %></h2>
 <p><%= @trip.location %></p>
 
-<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-  New Post
-</button>
-
-<div class="collapse" id="collapseExample">
-  <div>
-		<%= form_for ([@trip, @trip.posts.build]) do |f| %>
-	 
-	  <% if @trip.errors.any? %>
-	    <div id="error_explanation">
-	      <h2>
-	        <%= pluralize(@trip.errors.count, "error") %> prohibited
-	        this trip from being saved:
-	      </h2> 
-	      <ul>
-	        <% @trip.errors.full_messages.each do |msg| %>
-	          <li><%= msg %></li>
-	        <% end %>
-	      </ul>
-	    </div>
-	  <% end %>
+<%= link_to "New Post", new_trip_post_path(@trip) %> 	
  
-	  <p>
-	    <%= f.label :title %><br>
-	    <%= f.text_field :title %>
-	  </p>
-	 
-	  <p>
-	    <%= f.label :content %><br>
-	    <%= f.text_area :content %>
-	  </p>
-	 
-	  <p>
-	    <%= f.submit %>
-	  </p>
-	<% end %>
-  </div>
-</div>
-
 <div class="trip-index-div text-left">
-	<%= @trip.posts.each do |post| %>
-		<h4>Title: <%= post.title %></h4>
+	<% @trip.posts.each do |post| %>
+		<h3><%= post.title %></h3>
 		<p class="post-content"><%= post.content %></p>
+		<%= link_to "Edit", edit_trip_post_path({id: post.id, trip_id: @trip.id}) %>
+		<%= link_to "Delete", trip_post_path({id: post.id, trip_id: @trip.id}), :method => :delete%>
 	<% end %>
 </div>
 

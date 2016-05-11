@@ -1,10 +1,10 @@
 class PostsController < ApplicationController
 
- # def new
- # 		# @trip = Trip.find(params[:trip_id])
- # 		@post = Post.new
- # 		render :new
- # end
+ def new
+ 		@trip = Trip.find(params[:trip_id])
+ 		@post = Post.new
+ 		render :new
+ end
 
  def create
     @trip = Trip.find(params[:trip_id])
@@ -19,19 +19,26 @@ class PostsController < ApplicationController
 
  def edit
  		@trip = Trip.find(params[:trip_id])
- 		 p @trip
-    # @post = @trip.posts
+    @post = Post.find(params[:id])
     render :edit
  end
 
  def update
- 		trip = Trip.find(params[:trip_id])
- 		@post = @trip.posts
+    trip = Trip.find(params[:trip_id])
+    post = Post.find(params[:id])
+    post.update(post_params)
+    redirect_to trip
+ end
+
+ def destroy
+    post = Post.find(params[:id])
+    post.destroy
+    redirect_to post.trip
  end
 
   private
     def post_params
-      params.require(:post).permit(:title, :content, :photo)
+      params.require(:post).permit(:title, :content)
     end
 
 end
