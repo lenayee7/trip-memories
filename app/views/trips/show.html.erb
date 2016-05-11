@@ -10,7 +10,7 @@
 		<h3><%= post.title %></h3>
 		<p class="post-content"><%= post.content %></p>
 		<%= link_to "Edit", edit_trip_post_path({id: post.id, trip_id: @trip.id}) %>
-		<%= link_to "Delete", trip_post_path({id: post.id, trip_id: @trip.id}), :method => :delete%>
+		<%= link_to "Delete", trip_post_path({id: post.id, trip_id: @trip.id}), :method => :delete %>
 	<% end %>
 </div>
 

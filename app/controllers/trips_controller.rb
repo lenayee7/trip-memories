@@ -3,9 +3,7 @@ class TripsController < ApplicationController
 	before_action :authenticate_user!
 
 	def index
-		Trip.where(user_id: current_user.id)
-		p current_user
-		@trips = current_user.trips
+		@trips = current_user.trips.order(updated_at: :desc)
 		render :index
 	end
 
@@ -24,9 +22,22 @@ class TripsController < ApplicationController
 		render :show
 	end
 
-	# def destroy
-		
-	# end
+	def edit
+		@trip = Trip.find(params[:id])
+		render :edit
+	end
+
+	def update
+		trip = Trip.find(params[:id])
+		trip.update(trip_params)
+		redirect_to trips_path
+	end
+
+	def destroy
+		trip = Trip.find(params[:id])
+		trip.destroy
+		redirect_to trips_path
+	end
 
 	private
 
