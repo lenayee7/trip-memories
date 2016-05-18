@@ -1,17 +1,31 @@
-<%= link_to "<<Back", trips_path(current_user) %>
+<div class="edit-trash">
+<%= link_to edit_trip_path(@trip), class: "btn btn-default" do %>
+  <span class="glyphicon glyphicon-edit"></span>
+<% end %>
+<%= link_to trip_path(@trip), :method => :delete, class: "btn btn-default" do %>
+  <span class="glyphicon glyphicon-trash"></span>
+<% end %>
+</div>
 
 <h2><%= @trip.title %></h2>
 <p><%= @trip.location %></p>
-
+<%=link_to "Back to trips", trips_path(current_user) %><br>
 <%= link_to "New Post", new_trip_post_path(@trip) %> 	
  
 <div class="trip-index-div text-left">
 	<% @posts.each do |post| %>
-		<h3><%= post.title %></h3>
-		<%= image_tag post.image, :size => "200x200" %>
-		<p class="post-content"><%= post.content %></p>
-		<%= link_to "Edit", edit_trip_post_path({id: post.id, trip_id: @trip.id}) %>
-		<%= link_to "Delete", trip_post_path({id: post.id, trip_id: @trip.id}), :method => :delete %>
+    <div class="post-div col-md-4 col-xs-4">
+  		<h3><%= post.title %></h3>
+  		<%= image_tag post.image, class: "img-responsive" %>
+      <small><%= post.created_at.strftime("%a,%Y-%b-%d %I:%M")%> </small>
+  		<p class="post-content"><%= post.content %></p>
+      <%= link_to edit_trip_post_path({id: post.id, trip_id: @trip.id}), class: "btn btn-default" do %>
+        <span class="glyphicon glyphicon-edit"></span>
+      <% end %>
+      <%= link_to trip_post_path({id: post.id, trip_id: @trip.id}), :method => :delete, class: "btn btn-default" do %>
+        <span class="glyphicon glyphicon-trash"></span>
+      <% end %>
+    </div>
 	<% end %>
 </div>
 

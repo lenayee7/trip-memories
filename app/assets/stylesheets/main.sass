@@ -1,24 +1,59 @@
+$navbar-font: 'Sniglet', cursive
+$body-font: 'Inconsolata'
+$p-font-size: 1.5em
+$a-tags: 1em
+$margin-center: 0 auto
+$purp: #7D61B1
+$margin-bottom: 0
+
+// font-family: 'Lobster', cursive;
+
+// font-family: 'Kotta One', serif;
+
+// font-family: 'Sniglet', cursive;
+
+// font-family: 'Ruluko', sans-serif;
 
 .alert 
   border: 1px solid
+  width: 250px
   padding: 10px
   color: #50AD2D
+  margin: 0 auto
   &.alert-notice 
-    color: yellow
+    color: orange
   &.alert-error
     color: red
   &.alert-success
     color: green
 
 body 
-  background-image: url("http://www.drodd.com/images14/ocean-wallpaper20.jpg")
+  // background-image: url("http://www.drodd.com/images14/ocean-wallpaper20.jpg")
   background-repeat: no-repeat
   background-size: cover
+  font: 100% $body-font
   /*background-image: -moz-linear-gradient(top, $lightblue  42%, $darkblue 100%);*/
   background-attachment: fixed
 
+p
+  font-size: $p-font-size
+
+a
+  font-size: $a-tags
+  color: $purp
+
+h2 
+  margin-bottom: $margin-bottom
+h4
+  margin-top: 1px
+  margin-bottom: -2px
+
 .navbar 
   border-radius: 0
+  font: 100% $navbar-font  
+
+.navbar-brand 
+  font-size: 2.3em
 
 .jumbotron 
   opacity: .8
@@ -34,7 +69,71 @@ body
 /*****TRIP INDEX*****/
 
 .trip-index-div 
-  max-width: 600px
+  max-width: 90%
   margin: 0 auto
+
+.trip-div 
+  border: 1px solid #eee
+  text-align: center
+  height: 150px
+
+.edit-trash
+  text-align: right
+
+.black-border
+  border: 1px solid #eee
+  padding: 0 2%
+  border-radius: 5px
+/*****POST DIV*****/
+
+.post-div
+  border: 1px solid #eee
+  text-align: center
+
+.img-responsive
+  width: 50%
+  margin: $margin-center
+
+
+/*****NEW POST DIV*****/
+.new-post-div
+  width: 30%
+  margin: $margin-center
+  border: 1px solid yellow
+
+input#post_image
+  color: #eee
+  display: block
+
+input[type=file]
+  margin: $margin-center
+
+input[type="button"]
+  background-color: #eee
+
+textarea
+  width: 250px
+  height: 130px
+
+
+#location 
+  position: relative
+  min-height: 150px
+
+#location-content 
+  position: absolute
+  bottom: 8px
+  left: 6px
+
+
+
+
+
+
+
+
+
+
+
 
 
