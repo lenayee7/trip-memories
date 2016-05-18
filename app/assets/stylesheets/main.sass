@@ -1,10 +1,12 @@
 $navbar-font: 'Sniglet', cursive
-$body-font: 'Inconsolata'
+$body-font: 'Ruluko', sans-serif
 $p-font-size: 1.5em
 $a-tags: 1em
 $margin-center: 0 auto
 $purp: #7D61B1
 $margin-bottom: 0
+$break-x-small: 400px
+$break-small: 520px
 
 // font-family: 'Lobster', cursive
 
@@ -40,29 +42,33 @@ img
   &.alert-success
     color: green
 
+.container-fluid
+  padding: 1% 3% 0
+
 body 
-  // background-image: url("http://www.drodd.com/images14/ocean-wallpaper20.jpg")
-  background-repeat: no-repeat
-  background-size: cover
+  // opacity: 0.8
+  // background-image: url("https://upload.wikimedia.org/wikipedia/commons/5/58/Sunset_2007-1.jpg")
+  // background-repeat: no-repeat
+  // background-size: 100% 100%
   font: 100% $body-font
+  padding-top: 70px
   /*background-image: -moz-linear-gradient(top, $lightblue  42%, $darkblue 100%);*/
-  background-attachment: fixed
+  // background-attachment: fixed
 
 p
   font-size: $p-font-size
+  margin-bottom: 0
 
 a
   font-size: $a-tags
-  color: $purp
+  color: #9d9d9d
 
-h2 
+h1
+  font-family: $navbar-font
+
+h2
+  margin-top: 0
   margin-bottom: $margin-bottom
-h4
-  margin-top: 1px
-  margin-bottom: -15px
-
-h5
-  margin-top: 13px
 
 .navbar 
   border-radius: 0
@@ -71,67 +77,106 @@ h5
 .navbar-brand 
   font-size: 2.3em
 
-.jumbotron 
-  opacity: .8
-  background-color: transparent
+.navbar-inverse 
+  background-color: #eee
+  border-color: #eee
+
+.nav-subtitle 
+  font-size: 1.5em
+
+.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover
+  background-color: #AFAFAF
+
+.dropdown-menu>li>a
+  color: purple
 
 .btn-primary 
   color: #fff
   background-color: #333
   border-color: #333
 
-
 /*****TRIP INDEX*****/
 
 .trip-index-div 
-  max-width: 90%
+  max-width: 95%
   margin: 0 auto
 
-.trip-div 
+.trip-div
+  border-radius: 25px
+  padding: 5px 5px
   position: relative
-  border: 1px solid #eee
+  // border: 1px solid #eee
   text-align: center
-  height: 150px
 
 .edit-trash
+  display: block
+  margin-right: 3%
   text-align: right
 
-.black-border
-  border: 1px solid #eee
-  padding: 0 2%
-  border-radius: 5px
-
-// .cover-image 
-//   position: relative
-//   height: 150px
-
-#location 
+.cover-image
   position: relative
-
-#location-content 
-  position: absolute
-  bottom: 6px
-
-.black-box
-  color: #FFF
-  width: auto
-  padding: 7px
-  background-color: #000
-  font-size: 1em
-
-/*****POST DIV*****/
-
-.post-div
-  border: 1px solid #eee
-  text-align: center
-
-.img-responsive
   display: block
   max-width: 100%
-  height: auto
+  height: 235px
 
+#location-name 
+  margin-top: 0
+  color: #777
+  font-size: 14px
 
-/*****NEW POST DIV*****/
+.title-link
+  padding-top: 4%
+  font-size: 1.3em
+  padding-top: 5px 
+
+.title-h4
+  margin-bottom: 0
+
+.black-box
+  padding: 1% 0
+  vertical-align: middle
+  color: #FFF
+  // padding: 7px
+  background-color: #333
+  font-size: 1em
+
+/*****TRIP SHOW - POSTS*****/
+
+.med-size-link
+  font-size: 1.5em
+  margin-bottom: 2%
+
+.post-div
+  margin-top: 2%
+  border: 1px solid #eee
+  text-align: center
+  // background-color: #eee
+
+.post-img 
+  border-radius: 5px
+
+.img-responsive
+  width: 80%
+  height: 220px
+  margin: $margin-center
+
+.post-title
+  color: #502586
+  font-weight: bold
+
+.post-content
+  border-radius: 5px
+  width: 80%
+  margin: 2% auto
+  padding: 3% 0
+  border: 1px solid #eee
+  height: 120px
+  overflow: scroll
+
+.post-edit-trash
+  text-align: right
+
+/*****NEW POST FORM*****/
 .new-post-div
   width: 30%
   margin: $margin-center
@@ -150,11 +195,6 @@ input[type="button"]
 textarea
   width: 250px
   height: 130px
-
-
-
-
-
 
 
 
