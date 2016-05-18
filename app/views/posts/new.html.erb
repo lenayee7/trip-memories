@@ -1,6 +1,6 @@
 <h2>New Post</h2>
 
-<%= form_for :post, url: trip_posts_path do |f| %>
+<%= form_for :post, url: trip_posts_path, html: {multipart: true } do |f| %>
  
   <% if @trip.errors.any? %>
     <div id="error_explanation">
@@ -19,6 +19,11 @@
   <p>
     <%= f.label :title %><br>
     <%= f.text_field :title %>
+  </p>
+
+  <p>
+    <%= f.label :image %><br>
+    <%= f.file_field :image %>
   </p>
  
   <p>

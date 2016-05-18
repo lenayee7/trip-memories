@@ -6,8 +6,9 @@
 <%= link_to "New Post", new_trip_post_path(@trip) %> 	
  
 <div class="trip-index-div text-left">
-	<% @trip.posts.each do |post| %>
+	<% @posts.each do |post| %>
 		<h3><%= post.title %></h3>
+		<%= image_tag post.image, :size => "200x200" %>
 		<p class="post-content"><%= post.content %></p>
 		<%= link_to "Edit", edit_trip_post_path({id: post.id, trip_id: @trip.id}) %>
 		<%= link_to "Delete", trip_post_path({id: post.id, trip_id: @trip.id}), :method => :delete %>

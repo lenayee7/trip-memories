@@ -3,6 +3,7 @@ class TripsController < ApplicationController
 	before_action :authenticate_user!
 
 	def index
+		@user = current_user
 		@trips = current_user.trips.order(updated_at: :desc)
 		render :index
 	end
@@ -13,12 +14,22 @@ class TripsController < ApplicationController
 	end
 
 	def create
+	# 	@user = current_user
+	# 	@trip = Trip.new(trip_params)
+	# 	if @trip.save
+	# 		redirect_to @trip
+	# 	else 
+	# 		flash.now[:error] = "Could not save trip"
+	# 		render action: "new"
+	# 	end
+	# end
 		@trip = current_user.trips.create(trip_params)
-    redirect_to @trip
-	end
+    redirect_to @trip, success: "You have successfully made a new trip."
+  end
 
 	def show
 		@trip = current_user.trips.find(params[:id])
+		@posts = @trip.posts.order(created_at: :desc)
 		render :show
 	end
 
