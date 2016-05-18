@@ -6,13 +6,26 @@ $margin-center: 0 auto
 $purp: #7D61B1
 $margin-bottom: 0
 
-// font-family: 'Lobster', cursive;
+// font-family: 'Lobster', cursive
 
 // font-family: 'Kotta One', serif;
 
 // font-family: 'Sniglet', cursive;
 
 // font-family: 'Ruluko', sans-serif;
+.round-image-50 
+  background-color: white
+  border: 1px solid #d9d9d9
+  border-radius: 25px
+  -moz-border-radius: 25px
+  -webkit-border-radius: 25px
+  height: 50px
+  width: 50px
+  overflow: hidden
+  text-align: center
+
+img  
+  width: 100% 
 
 .alert 
   border: 1px solid
@@ -46,7 +59,10 @@ h2
   margin-bottom: $margin-bottom
 h4
   margin-top: 1px
-  margin-bottom: -2px
+  margin-bottom: -15px
+
+h5
+  margin-top: 13px
 
 .navbar 
   border-radius: 0
@@ -58,7 +74,6 @@ h4
 .jumbotron 
   opacity: .8
   background-color: transparent
-
 
 .btn-primary 
   color: #fff
@@ -73,6 +88,7 @@ h4
   margin: 0 auto
 
 .trip-div 
+  position: relative
   border: 1px solid #eee
   text-align: center
   height: 150px
@@ -84,6 +100,25 @@ h4
   border: 1px solid #eee
   padding: 0 2%
   border-radius: 5px
+
+// .cover-image 
+//   position: relative
+//   height: 150px
+
+#location 
+  position: relative
+
+#location-content 
+  position: absolute
+  bottom: 6px
+
+.black-box
+  color: #FFF
+  width: auto
+  padding: 7px
+  background-color: #000
+  font-size: 1em
+
 /*****POST DIV*****/
 
 .post-div
@@ -91,8 +126,9 @@ h4
   text-align: center
 
 .img-responsive
-  width: 50%
-  margin: $margin-center
+  display: block
+  max-width: 100%
+  height: auto
 
 
 /*****NEW POST DIV*****/
@@ -116,14 +152,6 @@ textarea
   height: 130px
 
 
-#location 
-  position: relative
-  min-height: 150px
-
-#location-content 
-  position: absolute
-  bottom: 8px
-  left: 6px
 
 
 
