@@ -14,17 +14,18 @@ class TripsController < ApplicationController
 	end
 
 	def create
-	# 	@user = current_user
-	# 	@trip = Trip.new(trip_params)
-	# 	if @trip.save
-	# 		redirect_to @trip
-	# 	else 
-	# 		flash.now[:error] = "Could not save trip"
-	# 		render action: "new"
-	# 	end
-	# end
-		@trip = current_user.trips.create(trip_params)
-    redirect_to @trip, success: "You have successfully made a new trip."
+		# @user = current_user
+		@trip = current_user.trips.build(trip_params)
+		if @trip.save
+			flash[:success] ="You have successfully made a new trip."
+			redirect_to @trip
+		else 
+			flash[:error] = "Could not save trip: #{@trip.errors.full_messages.join(".")}"
+			render action: "new"
+		end
+
+    # redirect_to @trip, success: "You have successfully made a new trip."
+		# @trip = current_user.trips.create(trip_params)
   end
 
 	def show
