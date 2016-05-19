@@ -1,37 +1,41 @@
 <div class="container-fluid">
-  <%= link_to "Back to My Trips", trips_path, class:"med-size-link" %>
-  <h2>Where you Trippin to?</h2>
+  <button class="trip-btns">
+  <%= link_to "Back to My Trips", trips_path, class:"med-size-link" %></button>
 
-  <%= form_for @trip, url: {action: "create"}, html: {multipart: true } do |f| %>
-   
-    <p>
-      <%= f.label :title %><br>
-      <%= f.text_field :title %>
-    </p>
-   
-    <p>
-      <%= f.label :location %><br>
-      <%= f.text_field :location %>
-    </p>
+  <div id="new-trip-div">
+    <h2>Where you Trippin to?</h2>
+    <%= form_for @trip, url: {action: "create"}, html: {multipart: true } do |f| %>
+     
+      <p>
+        <%= f.label :title %>
+        <%= f.text_field :title %>
+      </p>
+     
+      <p>
+        <%= f.label :location %>
+        <%= f.text_field :location %>
+      </p>
 
-    <p>
-      <%= f.label :cover_image %><br>
-      <%= f.file_field :cover_image %>
-    </p>
+      <p>
+        <%= f.label :start_date %>
+        <%= f.date_field :start_date %>
+      </p>
 
-    <p>
-      <%= f.label :start_date %><br>
-      <%= f.date_field :start_date %>
-    </p>
+      <p>
+       <%= f.label :end_date %>
+       <%= f.date_field :end_date %>
+      </p>
 
-    <p>
-     <%= f.label :end_date %><br>
-     <%= f.date_field :end_date %>
-    </p>
-   
-    <p>
-      <%= f.submit %>
-    </p>
-   
-  <% end %>
+      <p>
+        <%= f.label :cover_image %>
+        <%= f.file_field :cover_image %>
+      </p>
+     
+      <p>
+        <%= f.submit %>
+      </p>
+     
+    <% end %>
+  </div>
 </div>
+

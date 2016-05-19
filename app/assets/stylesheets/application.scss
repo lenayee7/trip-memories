@@ -13,5 +13,7 @@
  	@import "bootstrap-sprockets";
 	@import "bootstrap";
  *= require main
+ *= require_tree .
+
 
  */

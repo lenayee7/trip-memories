@@ -12,7 +12,7 @@ class PostsController < ApplicationController
     # p post.errors.full_messages
     @post = @trip.posts.create!(post_params)
     # flash[:notice] = "You have created a new post."
-    redirect_to @trip, notice: "Post was successfully created."
+    redirect_to @trip, success: "Post was successfully created."
   end
 
  def show
