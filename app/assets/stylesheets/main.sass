@@ -6,8 +6,9 @@ $margin-center: 0 auto
 $purp: #7D61B1
 $margin-bottom: 0
 $break-x-small: 400px
-$break-small: 520px
-
+$break-small: 600px
+$break-med: 960px
+$break-lg: 1160px
 // Inconsolata
 // font-family: 'Lobster', cursive
 
@@ -16,38 +17,6 @@ $break-small: 520px
 // font-family: 'Sniglet', cursive
 
 // font-family: 'Ruluko', sans-serif
-
-
-// #error_explanation 
-//   width: 60%
-//   margin: $margin-center
-//   border: 2px solid red
-//   padding: 7px
-//   padding-bottom: 0
-//   margin-bottom: 10px
-//   background-color: #f0f0f0
-
-// #error_explanation h2 
-//   // text-align: left
-//   margin: $margin-center
-//   font-weight: bold
-//   padding: 5px 5px 5px 15px
-//   font-size: 12px
-//   margin: -7px
-//   background-color: #c00
-//   color: #fff
-
-// #error_explanation p 
-//   color: #333
-//   margin-bottom: 0
-//   padding: 5px
-
-// #error_explanation ul
-//   margin: 10px
-
-// #error_explanation ul li
-//   font-size: 12px
-//   list-style: square
 
 .round-image-50 
   background-color: white
@@ -62,6 +31,11 @@ $break-small: 520px
 
 img  
   width: 100% 
+
+#messages
+  margin-bottom: 0
+  padding-top: 40px
+
 .alert 
   border: 1px solid
   width: 300px
@@ -78,8 +52,15 @@ img
   &.alert-success
     color: green
 
-.container-fluid
-  padding: 2% 3% 3%
+.container-fluid 
+  padding: 2% 3% 2%
+  @media screen and (max-width: $break-small)
+  margin: 0 30%
+  @media screen and (max-width: $break-med)
+  margin: 1% 20%
+  @media screen and (max-width: $break-lg)
+  margin: 0 0
+
 
 body 
   // opacity: 0.8
@@ -97,7 +78,7 @@ p
 
 a
   font-size: $a-tags
-  color: #BBB
+  color: #CC6B6B
   // #9d9d9d
 
 a:hover
@@ -121,15 +102,29 @@ h2
   font-size: 2.3em
 
 .navbar-inverse
-  opacity: .8
-  background-image: url(http://www.charlottekayphotography.com/userimages/12/11191/1/93331_mediumlarger.jpg)
-  // background-image: url(/images/navbar.jpg)
+  // opacity: .8
+  // background-image: url(http://www.charlottekayphotography.com/userimages/12/11191/1/93331_mediumlarger.jpg)
+  // background-image: url(http://www.carahsoft.com/wordpress/wp-content/uploads/2015/09/906420777_31969ad24b_z.jpg)
+  background-image: url(/images/navbar.jpg)
   background-size: 100% 100%
   background-color: #eee
   border-color: #eee
+  border-bottom: 1px solid #eee
 
 .navbar-inverse .navbar-brand
+  font-weight: bold
+  font-size: 2.7em
+  background-image: url(https://cdn2.iconfinder.com/data/icons/vacation-landmarks/512/45-512.png)
+  background-repeat: no-repeat
+  width: 200px
+  padding-right: 3%
+  background-size: 27% 100%
+  // color: #103F73
   color: #4CADAB
+  -webkit-text-fill-color: #0CCCC8 /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: .5px
+  -webkit-text-stroke-color: black
+
 
 .navbar-inverse .navbar-brand:hover
   color: #333
@@ -141,6 +136,7 @@ h2
   background-color: #AFAFAF
 
 .navbar-inverse .navbar-nav>li>a
+  font-size: $p-font-size
   color: #333
   // #4CADAB
 
@@ -178,6 +174,10 @@ h2
     // .trip-count
       // margin-bottom: 5%
 
+input[type="button" i], input[type="submit" i], input[type="reset" i], input[type="file" i]::-webkit-file-upload-button, button 
+  background-color: #4CADAB 
+  border-radius: 5px
+
 label, input
   border-radius: 5px
   display: inline-block
@@ -185,16 +185,24 @@ label, input
   width: 200px
   padding: 1% 4%
 
+input[type=file]
+  width: 230px
+  color: #333
+
 input[type=submit]
   margin-top: 2%
   padding: 1% 5%
 
-input[type=file]
-  // background-color: #333
+input#post_image 
+  color: #1D0808
+
+.login-btn
+  padding: 1% 4%
 
 #new-trip-div
-  border: 1px solid yellow
-  width: 60%
+  border-radius: 10px
+  border: 1px solid #eee
+  width: 50%
   margin: $margin-center
   padding: 2% 0
 
@@ -235,6 +243,8 @@ input[type=file]
   margin-right: 3%
   text-align: right
 
+.btn-btn-default
+
 #location-name 
   margin-top: 0
   color: #777
@@ -245,15 +255,20 @@ input[type=file]
 
 /*****TRIP SHOW - POSTS*****/
 
-.med-size-link
-  font-size: 1.5em
-  margin-bottom: 2%
+.nav-back
+  border-radius: 5px
+  padding: .2% 1%
+  background-color: #eee
+  font-weight: bold
+  font-size: 1.6em
+  margin-bottom: 3%
 
 .container
-  background-color: #E1ECF7
+  // background-color: #E1ECF7
   margin: 1% auto 3%
 
 .post-div
+  background-color: #eee
   margin-top: 2%
   border: 1px solid #F56868
   text-align: center
@@ -280,10 +295,11 @@ input[type=file]
   text-align: right
 
 /*****NEW POST FORM*****/
-.new-post-div
+#new-post-div
+  margin-top: 3%
   width: 30%
   margin: $margin-center
-  border: 1px solid yellow
+  border: 1px solid #eee
 
 input#post_image
   color: #eee
@@ -299,6 +315,14 @@ textarea
   width: 250px
   height: 130px
 
+.edit-profile-div
+  opacity: .8
+  background-color: #6BBFC5
+  border-radius: 10px
+  border: 1px solid #eee
+  width: 45%
+  margin: $margin-center
+  padding: 2% 0
 
 
 

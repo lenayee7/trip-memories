@@ -1,6 +1,5 @@
 <div class="container-fluid">
-  <button class="trip-btns">
-  <%= link_to "Back to My Trips", trips_path, class:"med-size-link" %></button>
+  <%= link_to "Back to My Trips", trips_path, class:"nav-back" %>
 
   <div id="new-trip-div">
     <h2>Where you Trippin to?</h2>
@@ -27,7 +26,6 @@
       </p>
 
       <p>
-        <%= f.label :cover_image %>
         <%= f.file_field :cover_image %>
       </p>
      

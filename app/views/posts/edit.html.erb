@@ -1,5 +1,6 @@
-<div>
-
+<h2>Edit Post</h2>
+<%= link_to "<< #{@trip.title}", @trip, class:"nav-back" %>
+<div id="new-post-div">
 	<%= form_for ([@trip, @post]) do |f| %>
     <p>
       <%= f.label :title %><br>
@@ -7,20 +8,20 @@
     </p>
    
     <p>
+      <%= f.label :content %><br>
+      <%= f.text_area :content %>
+    </p>
+
+    <p>
       <%= f.label :image %><br>
       <%= f.file_field :image %>
     </p>
 
-    <p>
-      <%= f.label :content %><br>
-      <%= f.text_area :content %>
-    </p>
    
     <p>
       <%= f.submit %>
     </p>
   <% end %>
-
 </div>
 
 

@@ -10,9 +10,9 @@
 
 <h2><%= @trip.title %></h2>
 <p><%= @trip.location %></p>
-<%=link_to "Back to trips", trips_path(current_user), class:"med-size-link" %> |
-<%= link_to "New Post", new_trip_post_path(@trip), class:"med-size-link" %> 
-	
+<%=link_to "Back to trips", trips_path(current_user), class:"nav-back" %> 
+<%= link_to "New Post", new_trip_post_path(@trip), class:"nav-back" %> 
+
 <div class="container">
   <div class="trip-index-div text-left">
   	<% @posts.each do |post| %>
