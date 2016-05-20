@@ -21,6 +21,7 @@
 
 Trip Memories allows you to save your memories for that particular trip. 
 
+
 ![Trip-Memories](https://s3.amazonaws.com/trip-memories/trip-memories.png)
 
 Devise Authentication
