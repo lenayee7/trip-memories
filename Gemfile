@@ -31,6 +31,8 @@ gem 'devise'
 
 gem "paperclip"
 
+gem 'aws-s3', :require => 'aws/s3'
+
 gem 'aws-sdk', '~> 2.3'
 
 # Use ActiveModel has_secure_password
