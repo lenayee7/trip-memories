@@ -18,7 +18,7 @@
   	<% @posts.each do |post| %>
       <div class="post-div col-md-4 col-xs-6">
     		<h4 class="post-title"><%= post.title %></h4>
-    		<%= image_tag post.image, class: "img-responsive post-img" %>
+    		<%= link_to image_tag(post.image.url, class: "img-responsive post-img"), post.image.url, target:'_blank' %>
     		<p class="post-content"><%= post.content %></p>
 
         <div class="post-date ">

@@ -27,11 +27,11 @@ Devise Authentication
 
 Paperclip gem allows upload photos to posts
 
-Technologies
+###Technologies
 *Ruby on Rails
 *Bootstrap
 *Heroku
 
-Others
+####Others
 *Paperclip
 *AWS - S3 Services
