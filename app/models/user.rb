@@ -1,9 +1,6 @@
 class User < ActiveRecord::Base
   has_many :trips
-  has_attached_file :avatar, styles: { medium: "300x300>", thumb: "100x100>" }, default_url: "https://s3.amazonaws.com/trip-memories/whale.jpg",
-  storage: :s3,
-      s3_credentials: {access_key_id: ENV["AWS_KEY"], secret_access_key: ENV["AWS_SECRET"]},
-      bucket: "YOUR_BUCKET"
+  has_attached_file :avatar, styles: { medium: "300x300>", thumb: "20x20>" }, default_url: "https://s3.amazonaws.com/trip-memories/whale.jpg"
   validates :email, uniqueness: true
   validates_attachment_content_type :avatar, :content_type => /\Aimage\/.*\Z/
   # Explicitly do not validate

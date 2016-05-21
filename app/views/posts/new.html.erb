@@ -1,5 +1,5 @@
 <h2>New Post</h2>
-<%= link_to "<< #{@trip.title}", @trip, class:"nav-back" %>
+<div class="margin-bottom"><%= link_to "<< #{@trip.title}", @trip, class:"nav-back" %></div>
 <div id="new-post-div">
   <%= form_for :post, url: trip_posts_path, html: {multipart: true } do |f| %>
 

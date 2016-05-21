@@ -9,14 +9,14 @@
 </div>
 
 <h2><%= @trip.title %></h2>
-<p><%= @trip.location %></p>
+<p class="margin-bottom"><%= @trip.location %></p>
 <%=link_to "Back to trips", trips_path(current_user), class:"nav-back" %> 
 <%= link_to "New Post", new_trip_post_path(@trip), class:"nav-back" %> 
 
 <div class="container">
   <div class="trip-index-div text-left">
   	<% @posts.each do |post| %>
-      <div class="post-div col-md-4 col-xs-6">
+      <div class="post-div col-md-6 col-xs-12">
     		<h4 class="post-title"><%= post.title %></h4>
     		<%= link_to image_tag(post.image.url, class: "img-responsive post-img"), post.image.url, target:'_blank' %>
     		<p class="post-content"><%= post.content %></p>
