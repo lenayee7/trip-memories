@@ -1,0 +1,624 @@
+/* line 22, /Users/Lena/ga-sf/lena-github/trip-memories/app/assets/stylesheets/main.sass */
+.h2-titles {
+  padding: 2%;
+  border-radius: 10px;
+  background-color: #C09B6F;
+  margin-bottom: 3%;
+}
+
+/* line 28, /Users/Lena/ga-sf/lena-github/trip-memories/app/assets/stylesheets/main.sass */
+img {
+  width: 100%;
+}
+
+/* line 31, /Users/Lena/ga-sf/lena-github/trip-memories/app/assets/stylesheets/main.sass */
+#messages {
+  margin-bottom: 0;
+  padding-top: 40px;
+}
+
+/* line 35, /Users/Lena/ga-sf/lena-github/trip-memories/app/assets/stylesheets/main.sass */
+.alert {
+  border: 1px solid;
+  width: 300px;
+  padding: 10px;
+  color: red;
+  margin: 0 auto;
+}
+/* line 41, /Users/Lena/ga-sf/lena-github/trip-memories/app/assets/stylesheets/main.sass */
+.alert.alert-alert {
+  background-color: #F39A9A;
+}
+/* line 43, /Users/Lena/ga-sf/lena-github/trip-memories/app/assets/stylesheets/main.sass */
+.alert.alert-notice {
+  background-color: #DFF0D8;
+  color: green;
+}
+/* line 46, /Users/Lena/ga-sf/lena-github/trip-memories/app/assets/stylesheets/main.sass */
+.alert.alert-error {
+  color: red;
+}
+/* line 48, /Users/Lena/ga-sf/lena-github/trip-memories/app/assets/stylesheets/main.sass */
+.alert.alert-success {
+  color: green;
+}
+
+/* line 51, /Users/Lena/ga-sf/lena-github/trip-memories/app/assets/stylesheets/main.sass */
+.container-fluid {
+  padding-left: -15px;
+}
+
+/* line 54, /Users/Lena/ga-sf/lena-github/trip-memories/app/assets/stylesheets/main.sass */
+.username {
+  padding: 0;
+}
+
+/* line 57, /Users/Lena/ga-sf/lena-github/trip-memories/app/assets/stylesheets/main.sass */
+body {
+  font: 100% "Ruluko", sans-serif;
+  padding-top: 170px;
+}
+
+/* line 65, /Users/Lena/ga-sf/lena-github/trip-memories/app/assets/stylesheets/main.sass */
+p {
+  font-size: 1.5em;
+  margin-bottom: 0;
+}
+
+/* line 69, /Users/Lena/ga-sf/lena-github/trip-memories/app/assets/stylesheets/main.sass */
+a {
+  font-size: 1.4em;
+  color: #CC6B6B;
+}
+
+/* line 74, /Users/Lena/ga-sf/lena-github/trip-memories/app/assets/stylesheets/main.sass */
+a:hover {
+  color: #CC6B6B;
+}
+
+/* line 77, /Users/Lena/ga-sf/lena-github/trip-memories/app/assets/stylesheets/main.sass */
+h1 {
+  font-family: "Sniglet", cursive;
+  margin-bottom: 0;
+  margin-top: 15px;
+}
+
+/* line 82, /Users/Lena/ga-sf/lena-github/trip-memories/app/assets/stylesheets/main.sass */
+h2 {
+  font-family: "Sniglet", cursive;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* line 87, /Users/Lena/ga-sf/lena-github/trip-memories/app/assets/stylesheets/main.sass */
+.navbar {
+  border-radius: 0;
+  font: 100% "Sniglet", cursive;
+}
+
+/* line 91, /Users/Lena/ga-sf/lena-github/trip-memories/app/assets/stylesheets/main.sass */
+.navbar-inverse {
+  background-image: url(https://s3.amazonaws.com/trip-memories/navbar.jpg);
+  background-size: 100% 100%;
+  background-color: #eee;
+  border-color: #eee;
+  border-bottom: 1px solid #eee;
+}
+
+/* line 101, /Users/Lena/ga-sf/lena-github/trip-memories/app/assets/stylesheets/main.sass */
+.logo {
+  margin: 0 1%;
+  width: 5%;
+  border-radius: 100px;
+}
+
+/* line 107, /Users/Lena/ga-sf/lena-github/trip-memories/app/assets/stylesheets/main.sass */
+.plane {
+  width: 4%;
+}
+
+/* line 110, /Users/Lena/ga-sf/lena-github/trip-memories/app/assets/stylesheets/main.sass */
+#avatar {
+  width: 7%;
+}
+
+/* line 113, /Users/Lena/ga-sf/lena-github/trip-memories/app/assets/stylesheets/main.sass */
+.round-image-50 {
+  border: 1px solid #d9d9d9;
+  border-radius: 100px;
+  width: 2%;
+  overflow: hidden;
+  text-align: center;
+}
+
+/* line 124, /Users/Lena/ga-sf/lena-github/trip-memories/app/assets/stylesheets/main.sass */
+.trip-memories-container {
+  margin: 2% auto 0.5%;
+}
+
+/* line 128, /Users/Lena/ga-sf/lena-github/trip-memories/app/assets/stylesheets/main.sass */
+#trip-memories-link {
+  margin-top: 5%;
+  font-weight: bold;
+  font-size: 3.5em;
+  background-repeat: no-repeat;
+  width: 270px;
+  background-size: 27% 100%;
+  -webkit-text-fill-color: #0CCCC8;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: black;
+}
+
+/* line 140, /Users/Lena/ga-sf/lena-github/trip-memories/app/assets/stylesheets/main.sass */
+.navbar-inverse .navbar-brand:hover {
+  color: #333;
+}
+
+/* line 143, /Users/Lena/ga-sf/lena-github/trip-memories/app/assets/stylesheets/main.sass */
+.nav-subtitle {
+  font-size: 1.5em;
+}
+
+/* line 146, /Users/Lena/ga-sf/lena-github/trip-memories/app/assets/stylesheets/main.sass */
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:focus, .navbar-inverse .navbar-nav > .open > a:hover {
+  background-color: #4CADAB;
+}
+
+/* line 148, /Users/Lena/ga-sf/lena-github/trip-memories/app/assets/stylesheets/main.sass */
+.nav-stuff {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* line 152, /Users/Lena/ga-sf/lena-github/trip-memories/app/assets/stylesheets/main.sass */
+.bebeh-slade {
+  margin-top: 11%;
+}
+
+/* line 155, /Users/Lena/ga-sf/lena-github/trip-memories/app/assets/stylesheets/main.sass */
+.navbar-inverse .navbar-nav > li > a {
+  padding-top: 20%;
+  padding: 6% 0;
+  border-radius: 5px;
+  border: 1px solid #333;
+  background-color: #168A94;
+  font-size: 1.5em;
+  color: #333;
+}
+
+/* line 165, /Users/Lena/ga-sf/lena-github/trip-memories/app/assets/stylesheets/main.sass */
+.navbar-inverse .navbar-nav > li > a:hover {
+  color: #4CADAB;
+}
+
+/* line 168, /Users/Lena/ga-sf/lena-github/trip-memories/app/assets/stylesheets/main.sass */
+.dropdown-menu > li > a {
+  color: #168A94;
+}
+
+/* line 171, /Users/Lena/ga-sf/lena-github/trip-memories/app/assets/stylesheets/main.sass */
+.navbar-nav > li > .dropdown-menu {
+  background-color: #eee;
+  padding: 0;
+}
+
+/* line 175, /Users/Lena/ga-sf/lena-github/trip-memories/app/assets/stylesheets/main.sass */
+.dropdown-menu {
+  padding: 0;
+  min-width: 120px;
+}
+
+/* line 179, /Users/Lena/ga-sf/lena-github/trip-memories/app/assets/stylesheets/main.sass */
+.btn-primary {
+  color: #fff;
+  background-color: #333;
+  border-color: #333;
+}
+
+/*****TRIP INDEX**** */
+/* line 186, /Users/Lena/ga-sf/lena-github/trip-memories/app/assets/stylesheets/main.sass */
+.border-pink {
+  border: 1px solid #CC6B6B;
+}
+
+/* line 189, /Users/Lena/ga-sf/lena-github/trip-memories/app/assets/stylesheets/main.sass */
+#subtitle-container {
+  width: 350px;
+  margin: 0 auto;
+}
+
+/* line 193, /Users/Lena/ga-sf/lena-github/trip-memories/app/assets/stylesheets/main.sass */
+.trip-btns {
+  font-family: "Sniglet", cursive;
+  background-color: #333;
+  margin-bottom: 2%;
+  padding: 2% 4%;
+}
+
+/* line 201, /Users/Lena/ga-sf/lena-github/trip-memories/app/assets/stylesheets/main.sass */
+input[type="button" i], input[type="submit" i], input[type="reset" i], input[type="file" i]::-webkit-file-upload-button, button {
+  background-color: #4CADAB;
+  border-radius: 5px;
+  font-family: "Sniglet", cursive;
+}
+
+/* line 206, /Users/Lena/ga-sf/lena-github/trip-memories/app/assets/stylesheets/main.sass */
+label, input {
+  border-radius: 5px;
+  display: inline-block;
+  vertical-align: baseline;
+  width: 250px;
+  padding: 0.5% 4%;
+}
+
+/* line 213, /Users/Lena/ga-sf/lena-github/trip-memories/app/assets/stylesheets/main.sass */
+input[type=file] {
+  color: #333;
+}
+
+/* line 216, /Users/Lena/ga-sf/lena-github/trip-memories/app/assets/stylesheets/main.sass */
+input[type=file]#post_image {
+  color: #333;
+}
+
+/* line 219, /Users/Lena/ga-sf/lena-github/trip-memories/app/assets/stylesheets/main.sass */
+input[type=submit] {
+  margin: 2% 0;
+  padding: 0.5% 5%;
+}
+
+/* line 223, /Users/Lena/ga-sf/lena-github/trip-memories/app/assets/stylesheets/main.sass */
+input#post_image {
+  color: #1D0808;
+}
+
+/* line 226, /Users/Lena/ga-sf/lena-github/trip-memories/app/assets/stylesheets/main.sass */
+.login-btn {
+  padding: 1% 4%;
+}
+
+/* line 229, /Users/Lena/ga-sf/lena-github/trip-memories/app/assets/stylesheets/main.sass */
+.new-post-trip-div {
+  background-image: url(https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQqm8H0DB_6_IlVsuzGyI6OTEAjQjQZXPgnYiWx4MkdGtaLbJ3Obw);
+  background-size: cover;
+  opacity: 0.8;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  width: 30%;
+  margin: 0 auto;
+}
+
+/* line 239, /Users/Lena/ga-sf/lena-github/trip-memories/app/assets/stylesheets/main.sass */
+.trip-index-div {
+  max-width: 95%;
+  margin: 0 auto;
+}
+
+/* line 243, /Users/Lena/ga-sf/lena-github/trip-memories/app/assets/stylesheets/main.sass */
+.trip-div {
+  border-radius: 25px;
+  padding: 5px 5px;
+  position: relative;
+  text-align: center;
+}
+/* line 249, /Users/Lena/ga-sf/lena-github/trip-memories/app/assets/stylesheets/main.sass */
+.trip-div .cover-image {
+  border: 2px solid #EFD4B6;
+  position: relative;
+  display: block;
+  max-width: 100%;
+  height: 180px;
+}
+/* line 256, /Users/Lena/ga-sf/lena-github/trip-memories/app/assets/stylesheets/main.sass */
+.trip-div .black-box {
+  padding: 1% 0;
+  vertical-align: middle;
+  color: #FFF;
+  border: 2px solid #EFD4B6;
+  background-color: #18191B;
+  font-size: 1em;
+}
+/* line 265, /Users/Lena/ga-sf/lena-github/trip-memories/app/assets/stylesheets/main.sass */
+.trip-div .black-box .title-link {
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #CC6B6B;
+}
+/* line 269, /Users/Lena/ga-sf/lena-github/trip-memories/app/assets/stylesheets/main.sass */
+.trip-div .black-box p {
+  color: #E0CCCC;
+}
+
+/* line 272, /Users/Lena/ga-sf/lena-github/trip-memories/app/assets/stylesheets/main.sass */
+.edit-trash {
+  display: block;
+  margin-right: 3%;
+  text-align: right;
+}
+
+/* line 277, /Users/Lena/ga-sf/lena-github/trip-memories/app/assets/stylesheets/main.sass */
+#location-name {
+  margin-top: 0;
+  color: #777;
+  font-size: 14px;
+}
+
+/* line 282, /Users/Lena/ga-sf/lena-github/trip-memories/app/assets/stylesheets/main.sass */
+.title-h4 {
+  margin-bottom: 0;
+}
+
+/*****TRIP SHOW - POSTS**** */
+/* line 286, /Users/Lena/ga-sf/lena-github/trip-memories/app/assets/stylesheets/main.sass */
+.margin-bottom {
+  margin-bottom: 2%;
+}
+
+/* line 289, /Users/Lena/ga-sf/lena-github/trip-memories/app/assets/stylesheets/main.sass */
+.nav-back {
+  border-radius: 5px;
+  padding: 0.2% 1%;
+  background-color: #eee;
+  font-weight: bold;
+  font-size: 1.6em;
+  margin-bottom: 3%;
+}
+
+/* line 297, /Users/Lena/ga-sf/lena-github/trip-memories/app/assets/stylesheets/main.sass */
+.container {
+  margin: 0 auto;
+}
+
+/* line 302, /Users/Lena/ga-sf/lena-github/trip-memories/app/assets/stylesheets/main.sass */
+.post-div {
+  background-color: #eee;
+  border: 1px solid #F56868;
+  text-align: center;
+}
+/* line 309, /Users/Lena/ga-sf/lena-github/trip-memories/app/assets/stylesheets/main.sass */
+.post-div .post-img {
+  border-radius: 5px;
+}
+/* line 311, /Users/Lena/ga-sf/lena-github/trip-memories/app/assets/stylesheets/main.sass */
+.post-div .img-responsive {
+  width: 100%;
+  margin: 0 auto;
+}
+/* line 315, /Users/Lena/ga-sf/lena-github/trip-memories/app/assets/stylesheets/main.sass */
+.post-div .post-title {
+  color: #4CADAB;
+  font-weight: bold;
+}
+/* line 318, /Users/Lena/ga-sf/lena-github/trip-memories/app/assets/stylesheets/main.sass */
+.post-div .post-content {
+  border-radius: 5px;
+  width: 80%;
+  margin: 2% auto;
+  padding: 3% 0;
+  border: 1px solid #eee;
+  height: 120px;
+  overflow: auto;
+}
+
+/* line 327, /Users/Lena/ga-sf/lena-github/trip-memories/app/assets/stylesheets/main.sass */
+.post-edit-trash {
+  text-align: right;
+}
+
+/*****NEW POST FORM**** */
+/* line 332, /Users/Lena/ga-sf/lena-github/trip-memories/app/assets/stylesheets/main.sass */
+input#post_image {
+  color: #eee;
+  display: block;
+}
+
+/* line 336, /Users/Lena/ga-sf/lena-github/trip-memories/app/assets/stylesheets/main.sass */
+input[type=file] {
+  margin: 0 auto;
+}
+
+/* line 339, /Users/Lena/ga-sf/lena-github/trip-memories/app/assets/stylesheets/main.sass */
+input[type="button"] {
+  background-color: #eee;
+}
+
+/* line 342, /Users/Lena/ga-sf/lena-github/trip-memories/app/assets/stylesheets/main.sass */
+textarea {
+  width: 250px;
+  height: 130px;
+  border-radius: 5px;
+}
+
+/* line 347, /Users/Lena/ga-sf/lena-github/trip-memories/app/assets/stylesheets/main.sass */
+.edit-profile-div {
+  opacity: 0.8;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+* {
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  /*background-color: #eee;*/
+  background: url(http://www.otsglobe.com/_uploads/images/backgrounds/background-oss.jpg) repeat fixed;
+  background-size: 100% 100%;
+  font-weight: 200;
+}
+
+#new_user {
+  height: 274px;
+}
+
+.login {
+  position: relative;
+  top: 50%;
+  width: 250px;
+  display: table;
+  margin: -220px auto 0 auto;
+  background: #fff;
+  border-radius: 4px;
+}
+.legend {
+  position: relative;
+  width: 100%;
+  display: block;
+  background: #FF7052;
+  padding: 15px;
+  color: #fff;
+  font-size: 20px;
+}
+.legend:after {
+  content: "";
+  /*background-image: url(http://simpleicon.com/wp-content/uploads/multy-user.png);*/
+  background-size: 100px 100px;
+  background-repeat: no-repeat;
+  background-position: 152px -16px;
+  opacity: 0.06;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+}
+.input {
+  position: relative;
+  width: 90%;
+  margin: 15px auto;
+}
+.input span {
+  position: absolute;
+  display: block;
+  color: #d4d4d4;
+  left: 10px;
+  top: 8px;
+  font-size: 20px;
+}
+.input input {
+  width: 100%;
+  padding: 10px 5px 10px 40px;
+  display: block;
+  border: 1px solid #EDEDED;
+  border-radius: 4px;
+  transition: 0.2s ease-out;
+  color: #a1a1a1;
+}
+.input input:focus {
+  padding: 10px 5px 10px 10px;
+  outline: 0;
+  border-color: #FF7052;
+}
+.submit {
+  width: 45px;
+  height: 45px;
+  display: block;
+  margin: 0 auto -15px auto;
+  background: #fff;
+  border-radius: 100%;
+  border: 1px solid #FF7052;
+  color: #FF7052;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0px 0px 0px 7px #fff;
+  transition: 0.2s ease-out;
+}
+.submit:hover,
+.submit:focus {
+  background: #FF7052;
+  color: #fff;
+  outline: 0;
+}
+@media (max-width: 1000px) {
+  .new-post-trip-div {
+    width: 35%;
+  }
+}
+
+@media (max-width: 810px) {
+  .new-post-trip-div {
+    width: 45%;
+  }
+}
+
+@media (max-width: 695px) {
+  .new-post-trip-div {
+    width: 55%;
+  }
+}
+
+@media (max-width: 595px) {
+  .new-post-trip-div {
+    width: 65%;
+  }
+}
+
+
+@media (max-width: 525px) {
+
+  .edit-profile-div {
+    background-color: #6BBFC5;
+    border: 1px solid #eee;
+    margin: 0 auto;
+    width: 70%;
+  }
+
+  input[type=submit] {
+    padding: 1% 5%;
+    margin-bottom: 2%;
+  }
+
+  label, input {
+    width: 250px;
+    padding: 1.5% 4%;
+  }
+
+  .h2-titles {
+    font-size: 2.5em;
+    padding: 2%;
+  }
+
+  .new-post-trip-div {
+    border: 1px solid #eee;
+    border-radius: 10px;
+    width: 80%;
+  }
+
+  .trip-memories-container {
+    margin: 5% auto 2%;
+  }
+
+  #avatar {
+    width: 20%;
+  }
+
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ 	@import "bootstrap-sprockets";
+	@import "bootstrap";
+  @import "media-queries";
+
+
+
+
+
+
+ */
