@@ -2,8 +2,13 @@
   <div class="container-fluid col-xs-12">
     <div class="trip-memories-container">
         <div>
-          <%= link_to 'Trip Memories', root_path, id: 'trip-memories-link' %><br>
-          <%= image_tag current_user.avatar, class:"round-image-50", id:"avatar" %>
+          <%= link_to 'Trip Memories', root_path, id: 'trip-memories-link' %><br><img class=" plane" src="https://s3.amazonaws.com/trip-memories/grayplane.jpg">
+            <% if user_signed_in? %>
+              <%= image_tag current_user.avatar, class:"round-image-50", id:"avatar" %>
+            <% else %>
+              <img class="logo" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcToPHz8kOOtrU1VJsyKyGW6IUiIVseq-PiIG_f9n9aHnchqNgjE">
+            <% end %>  
+          <img class="plane" src="https://s3.amazonaws.com/trip-memories/grayplane.jpg">
         </div>
     </div>
     <div class="col-xs-12">

@@ -1,8 +1,52 @@
 
-@media screen and (max-width: 410px)  {
+@media (max-width: 450px) {
 
-  body {
-    background-color: red;
+  #subtitle-container {
+    display: block;
+    margin: 0 auto;
+    /*width: 400px;*/
   }
+
+/*  .trip-btns {
+    float: none;
+    margin: 0 auto;
+  }*/
+
+}
+
+@media (max-width: 500px) {
+
+  input[type=submit] {
+    padding: 2% 5%
+  }
+
+  label, input {
+    width: 250px
+  }
+
+  .new-post-trip-div {
+    /*padding: 2% 2%;*/
+    border: 1px solid #eee;
+    border-radius: 10px
+    width: 100%
+  }
+
+  .trip-memories-container {
+    margin: 5% auto 2%
+  }
+
+  .h2-titles {
+    font-size: 2.5em;
+    background-color: $gray
+    padding: 1% 
+  }
+
+  #avatar {
+    width: 20%
+  }
+/*
+  #subtitle-container {
+    width: 350px;
+  }*/
 
 }

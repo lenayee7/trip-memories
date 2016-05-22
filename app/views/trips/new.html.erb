@@ -1,8 +1,9 @@
 <div class="container-fluid">
-  <div class="margin-bottom"><%= link_to "Back to My Trips", trips_path, class:"nav-back" %></div>
-
-  <div id="new-trip-div">
-    <h2>Where you Trippin to?</h2>
+  <div class="new-post-trip-div">
+    <div class="padding">
+    <h2 class="h2-titles">Where you Trippin to?</h2>
+    <div class="margin-bottom"><%= link_to "Back to My Trips", trips_path, class:"nav-back" %>
+    </div>
     <%= form_for @trip, url: {action: "create"}, html: {multipart: true } do |f| %>
      
       <p>
@@ -34,6 +35,7 @@
       </p>
      
     <% end %>
+    </div>
   </div>
 </div>
 

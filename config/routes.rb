@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
- authenticated :user do
-    root to: 'trips#index', as: :authenticated_root
-  end
-  # root to: "trips#index"
-  root to: "pages#index"
+ # authenticated :user do
+ #    root to: 'trips#index', as: :authenticated_root
+ #  end
+  root to: "trips#index"
+  # root to: "pages#index"
   devise_for :users
   get 'profile', to: 'users#show'
 

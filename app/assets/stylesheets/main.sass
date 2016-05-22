@@ -9,6 +9,7 @@ $break-x-small: 415px
 $break-small: 600px
 $break-med: 960px
 $break-lg: 1160px
+$gray: #eee
 // Inconsolata
 // font-family: 'Lobster', cursive
 
@@ -17,6 +18,9 @@ $break-lg: 1160px
 // font-family: 'Sniglet', cursive
 
 // font-family: 'Ruluko', sans-serif
+
+.h2-titles 
+  margin-bottom: 2%
 
 img  
   width: 100% 
@@ -41,16 +45,8 @@ img
   &.alert-success
     color: green
 
-// .container-fluid 
-//   padding: 2% 9% 1%
-  // padding: 3% 3% 2%
-  @media screen and (max-width: $break-small)
-  // padding: 10% 3% 13%
-  margin: 0 30%
-  @media screen and (max-width: $break-med)
-  margin: 1% 20%
-  @media screen and (max-width: $break-lg)
-  margin: 0 0
+.container-fluid
+  padding-left: -15px
 
 .username
   padding: 0
@@ -81,7 +77,7 @@ a:hover
 
 h1
   font-family: $navbar-font
-  margin-bottom: 0px
+  margin-bottom: $margin-bottom
   margin-top: 15px
 
 h2
@@ -103,8 +99,16 @@ h2
   border-color: #eee
   border-bottom: 1px solid #eee
 
+.logo
+  margin: 0 1%
+  width: 5%
+  border-radius: 100px
+
+.plane
+  width: 4%
+
 #avatar
-  width: 10%
+  width: 7%
 
 .round-image-50 
   // background-color: white
@@ -119,7 +123,7 @@ h2
 
 
 .trip-memories-container
-  width: 970px
+  // width: 970px
   margin: 2% auto 0.5%
 
 #trip-memories-link
@@ -135,19 +139,8 @@ h2
   -webkit-text-stroke-color: black
 
 #subtitle-container
-  width: 400px
+  // width: 400px
   margin: 0 auto
-// .navbar-inverse .navbar-brand
-//   // font-weight: bold
-//   // font-size: 2.7em
-//   // background-image: url(https://cdn2.iconfinder.com/data/icons/vacation-landmarks/512/45-512.png)
-//   background-repeat: no-repeat
-//   // width: 270px
-//   // padding-right: 3%
-//   // background-size: 27% 100%
-//   -webkit-text-fill-color: #0CCCC8 /* Will override color (regardless of order) */
-//   -webkit-text-stroke-width: .5px
-//   -webkit-text-stroke-color: black
 
 .navbar-inverse .navbar-brand:hover
   color: #333
@@ -199,9 +192,7 @@ h2
   border: 1px solid #CC6B6B
 
 .trip-btns
-  // width: 20%
-  // position: fixed
-  border-radius: 5px
+  // border-radius: 5px
   font-family: $navbar-font
   background-color: #333
   margin-bottom: 2%
@@ -216,16 +207,15 @@ label, input
   border-radius: 5px
   display: inline-block
   vertical-align: baseline
-  width: 200px
-  padding: 1% 4%
+  width: 250px
+  padding: .5% 4%
 
 input[type=file]
-  width: 240px
   color: #333
 
 input[type=submit]
   margin-top: 2%
-  padding: 1% 5%
+  padding: .5% 5%
 
 input#post_image 
   color: #1D0808
@@ -233,12 +223,11 @@ input#post_image
 .login-btn
   padding: 1% 4%
 
-#new-trip-div
+.new-post-trip-div
   border-radius: 10px
-  border: 1px solid #eee
-  width: 50%
+  width: 70%
   margin: $margin-center
-  padding: 2% 0
+  // padding: 2% 0
 
 .trip-index-div 
   max-width: 95%
@@ -289,7 +278,8 @@ input#post_image
 
 /*****TRIP SHOW - POSTS*****/
 .margin-bottom
-  margin-bottom: 11px
+  margin-bottom: 2%
+
 .nav-back
   border-radius: 5px
   padding: .2% 1%
@@ -313,7 +303,7 @@ input#post_image
     border-radius: 5px
   .img-responsive
     width: 100%
-    max-height: 300px
+    // max-height: 300px
     margin: $margin-center
   .post-title
     color: #4CADAB
@@ -331,11 +321,6 @@ input#post_image
   text-align: right
 
 /*****NEW POST FORM*****/
-#new-post-div
-  margin-top: 3%
-  width: 30%
-  margin: $margin-center
-  border: 1px solid #eee
 
 input#post_image
   color: #eee
@@ -356,9 +341,8 @@ textarea
   background-color: #6BBFC5
   border-radius: 10px
   border: 1px solid #eee
-  width: 45%
-  margin: $margin-center
-  padding: 2% 0
+  // margin: 0 10%
+  // padding: 2% 0
 
 
 

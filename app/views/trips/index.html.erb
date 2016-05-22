@@ -1,13 +1,9 @@
-<!-- <div id="trip-btns-div">
-  <button class="trip-btns "><%= link_to 'My Trips', trips_path %></button>
-  <button class="trip-btns"><%= link_to 'New Trip', new_trip_path %></button>
-</div> -->
 
-  <h1><%= current_user.name %>'s Trips</h1>
-  <p class="trip-count">You have <%= @trips.length %> trips!</p>
-<div class="trip-index-div text-left">
+<h1><%= current_user.name %>'s Trips</h1>
+<p class="trip-count">You have <%= @trips.length %> trips!</p>
+<div class="col-12-xs trip-index-div text-left">
 	<% @trips.each do |trip| %>
-   <div class="trip-div col-md-3 col-sm-4 col-xs-6" >
+   <div class="trip-div col-md-3 col-sm-6 col-xs-12" >
     <%= image_tag trip.cover_image.url, class: "cover-image" %>
     <div class="black-box col-xs-12">
       <p>
