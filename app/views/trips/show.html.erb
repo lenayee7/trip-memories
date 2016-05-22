@@ -18,7 +18,7 @@
 <div class="container">
   <div class="trip-index-div text-left">
   	<% @posts.each do |post| %>
-      <div class="post-div col-sm-6 col-xs-12">
+      <div class="post-div col-md-4 col-sm-6 col-xs-12">
     		<h4 class="post-title"><%= post.title %></h4>
     		<%= link_to image_tag(post.image.url, class: "img-responsive post-img"), post.image.url, target:'_blank' %>
     		<p class="post-content"><%= post.content %></p>

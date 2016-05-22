@@ -1,52 +1,64 @@
-
-@media (max-width: 450px) {
-
-  #subtitle-container {
-    display: block;
-    margin: 0 auto;
-    /*width: 400px;*/
+@media (max-width: 1000px) {
+  .new-post-trip-div {
+    width: 35%;
   }
-
-/*  .trip-btns {
-    float: none;
-    margin: 0 auto;
-  }*/
-
 }
 
-@media (max-width: 500px) {
+@media (max-width: 810px) {
+  .new-post-trip-div {
+    width: 45%;
+  }
+}
+
+@media (max-width: 695px) {
+  .new-post-trip-div {
+    width: 55%;
+  }
+}
+
+@media (max-width: 595px) {
+  .new-post-trip-div {
+    width: 65%;
+  }
+}
+
+
+@media (max-width: 525px) {
+
+  .edit-profile-div {
+    background-color: #6BBFC5
+    border: 1px solid #eee
+    margin: 0 auto;
+    width: 70%;
+  }
 
   input[type=submit] {
-    padding: 2% 5%
+    padding: 1% 5%;
+    margin-bottom: 2%;
   }
 
   label, input {
-    width: 250px
-  }
-
-  .new-post-trip-div {
-    /*padding: 2% 2%;*/
-    border: 1px solid #eee;
-    border-radius: 10px
-    width: 100%
-  }
-
-  .trip-memories-container {
-    margin: 5% auto 2%
+    width: 250px;
+    padding: 1.5% 4%;
   }
 
   .h2-titles {
     font-size: 2.5em;
-    background-color: $gray
-    padding: 1% 
+    padding: 2%;
+  }
+
+  .new-post-trip-div {
+    border: 1px solid #eee;
+    border-radius: 10px;
+    width: 80%;
+  }
+
+  .trip-memories-container {
+    margin: 5% auto 2%;
   }
 
   #avatar {
-    width: 20%
+    width: 20%;
   }
-/*
-  #subtitle-container {
-    width: 350px;
-  }*/
 
 }
