@@ -3,4 +3,7 @@ class Trip < ActiveRecord::Base
 	belongs_to :user
 	has_many :posts, dependent: :destroy
   has_attached_file :cover_image, styles: { medium: "300x300>", thumb: "100x100>" }
-  validates_attachment_content_type :cover_image, content_type: "image/jpeg", "image/gif", "image/png"]
+  validates_attachment_content_type :cover_image, 
+                                    :content_type => /^image\/(png|gif|jpeg)/,
+                                    :message => 'only (png/gif/jpeg) images'
+end
