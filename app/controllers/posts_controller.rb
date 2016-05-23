@@ -8,7 +8,7 @@ class PostsController < ApplicationController
 
  def create
     @trip = Trip.find(params[:trip_id])
-    p post_params
+        p post_params
     # p post.errors.full_messages
     @post = @trip.posts.create!(post_params)
     # flash[:notice] = "You have created a new post."
