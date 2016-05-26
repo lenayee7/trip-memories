@@ -4,7 +4,7 @@ class CreatePosts < ActiveRecord::Migration
       t.string :title,		null: false
       t.text :content
       t.belongs_to :trip, index: true
-      t.attachment :image
+      t.string :image
 
       t.timestamps null: false
     end

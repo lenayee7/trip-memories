@@ -17,31 +17,25 @@ ActiveRecord::Schema.define(version: 20160510033603) do
   enable_extension "plpgsql"
 
   create_table "posts", force: :cascade do |t|
-    t.string   "title",              null: false
+    t.string   "title",      null: false
     t.text     "content"
     t.integer  "trip_id"
-    t.string   "image_file_name"
-    t.string   "image_content_type"
-    t.integer  "image_file_size"
-    t.datetime "image_updated_at"
-    t.datetime "created_at",         null: false
-    t.datetime "updated_at",         null: false
+    t.string   "image"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   add_index "posts", ["trip_id"], name: "index_posts_on_trip_id", using: :btree
 
   create_table "trips", force: :cascade do |t|
-    t.string   "location",                 null: false
-    t.string   "title",                    null: false
+    t.string   "location",    null: false
+    t.string   "title",       null: false
     t.date     "start_date"
     t.date     "end_date"
-    t.string   "cover_image_file_name"
-    t.string   "cover_image_content_type"
-    t.integer  "cover_image_file_size"
-    t.datetime "cover_image_updated_at"
-    t.integer  "user_id",                  null: false
-    t.datetime "created_at",               null: false
-    t.datetime "updated_at",               null: false
+    t.string   "cover_image"
+    t.integer  "user_id",     null: false
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
   end
 
   add_index "trips", ["user_id"], name: "index_trips_on_user_id", using: :btree
@@ -50,10 +44,7 @@ ActiveRecord::Schema.define(version: 20160510033603) do
     t.string   "name",                   default: "", null: false
     t.string   "email",                  default: "", null: false
     t.string   "encrypted_password",     default: "", null: false
-    t.string   "avatar_file_name"
-    t.string   "avatar_content_type"
-    t.integer  "avatar_file_size"
-    t.datetime "avatar_updated_at"
+    t.string   "avatar"
     t.string   "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"

@@ -6,6 +6,11 @@
     </div>
     <%= form_for @trip, url: {action: "create"}, html: {multipart: true } do |f| %>
      
+      </p>
+        <%= f.label :cover_image %><br>
+        <%= f.uploadcare_field :cover_image %>
+      </p>
+      
       <p>
         <%= f.label :title %>
         <%= f.text_field :title %>
@@ -25,10 +30,7 @@
        <%= f.label :end_date %>
        <%= f.date_field :end_date %>
       </p>
-
-      <p>
-        <%= f.file_field :cover_image %>
-      </p>
+        
      
       <p>
         <%= f.submit %>
