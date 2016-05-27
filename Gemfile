@@ -31,9 +31,12 @@ gem 'devise'
 
 gem "paperclip"
 
-gem 'aws-sdk', '~> 2.3'
+gem 'dotenv-rails', :require => 'dotenv/rails-now', :groups => [:development, :test]
+
+gem 'aws-sdk', '< 2.0'
 
 gem 'sass-mediaqueries-rails'
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -48,6 +51,7 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
   gem 'pry'
+  gem 'dotenv-rails'
 end
 
 group :development do

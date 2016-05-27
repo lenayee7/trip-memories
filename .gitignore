@@ -18,3 +18,4 @@
 
 /public/images/*
 /public/system/posts/images*
+.env
