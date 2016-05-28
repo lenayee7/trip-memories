@@ -1,41 +1,39 @@
 <div class="container-fluid">
   <div class="new-post-trip-div">
-    <div class="padding">
-    <h2 class="h2-titles">Where you Trippin to?</h2>
+    <h2 class="legend padding">Where you Trippin to?</h2>
     <div class="margin-bottom"><%= link_to "Back to My Trips", trips_path, class:"nav-back" %>
     </div>
     <%= form_for @trip, url: {action: "create"}, html: {multipart: true } do |f| %>
      
-      <p>
+      <div class="field input">
         <%= f.label :title %>
         <%= f.text_field :title %>
-      </p>
+      </div>
      
-      <p>
+      <div class="field input">
         <%= f.label :location %>
         <%= f.text_field :location %>
-      </p>
+      </div>
 
-      <p>
+      <div class="field input">
         <%= f.label :start_date %>
         <%= f.date_field :start_date %>
-      </p>
+      </div>
 
-      <p>
+      <div class="field input">
        <%= f.label :end_date %>
        <%= f.date_field :end_date %>
-      </p>
+      </div>
 
-      <p>
+      <div class="field">
         <%= f.file_field :cover_image %>
-      </p>
+      </div>
      
-      <p>
+      <div class="actions">
         <%= f.submit %>
-      </p>
-     
+      </div>
+      
     <% end %>
-    </div>
   </div>
 </div>
 

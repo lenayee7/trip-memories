@@ -1,26 +1,27 @@
-<h2>Edit Post</h2>
+<div class="new-post-trip-div">
+<h2 class="legend padding">Edit Post</h2>
 <%= link_to "<< #{@trip.title}", @trip, class:"nav-back" %>
-<div id="new-post-div">
 	<%= form_for ([@trip, @post]) do |f| %>
-    <p>
+
+   <div class="field input">
       <%= f.label :title %><br>
       <%= f.text_field :title %>
-    </p>
+    </div>
    
-    <p>
+    <div class="field input">
       <%= f.label :content %><br>
       <%= f.text_area :content %>
-    </p>
+    </div>
 
-    <p>
+    <div class="field input">
       <%= f.label :image %><br>
       <%= f.file_field :image %>
-    </p>
+    </div>
 
    
-    <p>
+    <div class="field input">
       <%= f.submit %>
-    </p>
+    </div>
   <% end %>
 </div>
 

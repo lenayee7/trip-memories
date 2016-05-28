@@ -1,40 +1,41 @@
 <div class="container-fluid">
-  <%= link_to "Back to My Trips", trips_path, class:"nav-back" %>
+  <div class="new-post-trip-div">
+    <div class="padding">
+      <h2 class="legend">Edit Trip</h2>
+      <%= link_to "Back to My Trips", trips_path, class:"nav-back" %>
 
-  <div id="new-trip-div">
-    <h2>Edit Trip</h2>
+      <%= form_for @trip do |f| %>
+       
+         <div class="field input">
+          <%= f.label :title %>
+          <%= f.text_field :title %>
+        </div>
+       
+         <div class="field input">
+          <%= f.label :location %>
+          <%= f.text_field :location %>
+        </div>
 
-    <%= form_for @trip do |f| %>
-     
-      <p>
-        <%= f.label :title %>
-        <%= f.text_field :title %>
-      </p>
-     
-      <p>
-        <%= f.label :location %>
-        <%= f.text_field :location %>
-      </p>
+          <div class="field input">
+          <%= f.label :start_date %>
+          <%= f.date_field :start_date %>
+        </div>
 
-       <p>
-        <%= f.label :start_date %>
-        <%= f.date_field :start_date %>
-      </p>
+         <div class="field input">
+         <%= f.label :end_date %>
+         <%= f.date_field :end_date %>
+        </div>
 
-      <p>
-       <%= f.label :end_date %>
-       <%= f.date_field :end_date %>
-      </p>
-
-      <p>
-        <%= f.label :cover_image %><br>
-        <%= f.file_field :cover_image %>
-      </p>
-     
-      <p>
-        <%= f.submit %>
-      </p>
-     
-    <% end %>
+         <div class="field input">
+          <%= f.label :cover_image %><br>
+          <%= f.file_field :cover_image %>
+        </div>
+       
+        <div>
+          <%= f.submit %>
+        </div>
+       
+      <% end %>
+    </div>
   </div>
 </div>

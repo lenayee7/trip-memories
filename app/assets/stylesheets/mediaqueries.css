@@ -1,46 +1,94 @@
 @media (max-width: 1000px) {
-  .new-post-trip-div {
+/*  .new-post-trip-div {
     width: 35%;
+  }*/
+ /* .login-signup-ul {
+    width: 25%;
+  }*/
+
+  .plane {
+    width: 5%;
   }
+
+  .round-image-50.avatar {
+    width: 9%
+  }
+
 }
 
 @media (max-width: 810px) {
+
   .new-post-trip-div {
     width: 45%;
   }
+
+  .login-signup {
+    padding: 0;
+  }
+
+  .plane {
+    width: 5%;
+  }
+
+  .round-image-50.avatar {
+    width: 10%
+  }
+
 }
 
 @media (max-width: 695px) {
   .new-post-trip-div {
     width: 55%;
   }
+
+/*  .login-signup-ul {
+    width: 40%;
+  }*/
+
+   .login-signup {
+    padding: -10px -15px;
+  }
+
 }
 
 @media (max-width: 595px) {
   .new-post-trip-div {
     width: 65%;
   }
+
+  .plane {
+    width: 10%;
+  }
+
+  .round-image-50.avatar {
+    width: 18%
+  }
+
 }
 
 
 @media (max-width: 525px) {
 
-  .edit-profile-div {
+/*  .edit-profile-div {
     background-color: #6BBFC5;
     border: 1px solid #eee;
     margin: 0 auto;
     width: 70%;
-  }
+  }*/
+/*
+label, input {
+  width: 70%;
+  padding: 3% 4%;
+}
+
+textarea {
+  width: 70%;
+}*/
 
   input[type=submit] {
-    padding: 1% 5%;
+    padding: 2% 5%;
     margin-bottom: 2%;
-  }
-
-  label, input {
-    width: 250px;
-    padding: 1.5% 4%;
-  }
+}
 
   .h2-titles {
     font-size: 2.5em;
@@ -55,10 +103,6 @@
 
   .trip-memories-container {
     margin: 5% auto 2%;
-  }
-
-  #avatar {
-    width: 20%;
   }
 
 }

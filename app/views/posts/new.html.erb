@@ -1,27 +1,27 @@
 <div class="container-fluid">
   <div class="new-post-trip-div">
-    <h2 class="h2-titles">New Post</h2>
+    <h2 class="legend padding">New Post</h2>
     <div class="margin-bottom"><%= link_to "<< #{@trip.title}", @trip, class:"nav-back" %></div>
     <%= form_for :post, url: trip_posts_path, html: {multipart: true } do |f| %>
 
-      <p>
-        <%= f.label :image %><br>
-        <%= f.file_field :image %>
-      </p>
-
-      <p>
+      <div class="field input">
         <%= f.label :title %><br>
         <%= f.text_field :title %>
-      </p>
+      </div>
 
-      <p>
+      <div class="field input">
         <%= f.label :content %><br>
         <%= f.text_area :content %>
-      </p>
+      </div>
+
+      <div class="field input">
+        <%= f.label :image %><br>
+        <%= f.file_field :image %>
+      </div>
     
-      <p>
+      <div class="field input">
         <%= f.submit %>
-      </p>
+      </div>
     <% end %>
   </div>
 </div>
