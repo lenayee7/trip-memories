@@ -18,7 +18,7 @@ body {
 
 .login {
   position: relative;
-  top: 60%;
+  top: 50%;
   width: 250px;
   display: table;
   margin: -220px auto 0 auto;
@@ -34,7 +34,7 @@ body {
   padding: 15px;
   color: #fff;
   font-size: 20px;
-  margin-bottom: 2%;
+  margin-bottom: 3%;
 }
 .legend:after {
   content: "";

@@ -30,8 +30,10 @@
           </li>
         </div>
         <% else %>
-          <li class=" col-xs-6 login-signup border-pink"><%= link_to 'Log In', new_user_session_path %></li>
-          <li class=" col-xs-6 login-signup border-pink"><%= link_to 'Sign Up', new_user_registration_path %></li>
+          <li class="col-xs-4"></li>
+          <li class=" col-xs-2 login-signup border-pink"><%= link_to 'Log In', new_user_session_path %></li>
+          <li class=" col-xs-2 login-signup border-pink"><%= link_to 'Sign Up', new_user_registration_path %></li>
+          <li class="col-xs-4"></li>
         <% end %>
       </ul>
     </div>
