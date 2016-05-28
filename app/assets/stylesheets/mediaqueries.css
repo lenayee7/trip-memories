@@ -73,6 +73,11 @@
 
 @media (max-width: 595px) {
 
+
+  a{
+    font-size: 1em;
+  }
+
   .logo {
     width: 12%;
   }
@@ -93,6 +98,10 @@
 
 
 @media (max-width: 525px) {
+
+  body {
+    padding-top:  60px;
+  }
 
   #trip-memories-link {
     font-size: 2.5em;
