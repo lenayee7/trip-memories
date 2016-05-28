@@ -13,10 +13,9 @@
 </head>
 
 <body class="text-center">
-	
  	<%= render "pages/navbar" %>
 
-	<div id="messages" class="container">
+	<div id="messages" class="container-fluid">
 	  <% flash.each do |key, value| %>
 	    <div class="alert alert-<%= key %>">
 	      <%= value %>
@@ -25,6 +24,7 @@
 	</div>
 	
 	<%= yield %>
-
+  
+  <%= render "pages/footer" %>
 </body>
 </html>

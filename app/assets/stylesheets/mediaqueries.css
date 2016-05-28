@@ -1,5 +1,10 @@
 @media (max-width: 1000px) {
 
+  .logo {
+    margin-bottom: 2%;
+    width: 8%;
+  }
+
   .plane {
     width: 5%;
   }
@@ -20,8 +25,13 @@
     padding: 0;
   }
 
+  .logo {
+    margin-bottom: 2%;
+    width: 10%;
+  }
+
   .plane {
-    width: 5%;
+    width: 7%;
   }
 
   .round-image-50.avatar {
@@ -31,6 +41,22 @@
 }
 
 @media (max-width: 695px) {
+  
+  .post-div {
+    height: auto;
+  }
+  
+  .post-img.img-responsive {
+    height: auto;
+  }    
+    
+  .trip-div
+  .cover-image {
+    max-width: 100%;
+    height: auto;
+    max-height: 500px;
+  }
+
   .new-post-trip-div {
     width: 55%;
   }
@@ -46,6 +72,11 @@
 }
 
 @media (max-width: 595px) {
+
+  .logo {
+    width: 12%;
+  }
+
   .new-post-trip-div {
     width: 65%;
   }
@@ -62,6 +93,23 @@
 
 
 @media (max-width: 525px) {
+
+  #trip-memories-link {
+    font-size: 2.5em;
+  }
+
+  .h1-titles {
+    font-size: 2.5em;
+  }
+
+  .round-image-50.avatar {
+    width: 20%;
+  }
+
+  .logo {
+    width: 17%;
+  }
+
 
   #subtitle-container {
     width: 100%;

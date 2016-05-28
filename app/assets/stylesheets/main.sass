@@ -1,6 +1,6 @@
 $navbar-font: 'Sniglet', cursive
 $body-font: 'Ruluko', sans-serif
-$p-font-size: 1.5em
+$p-font-size: 1em
 $a-tags: 1.4em
 $margin-center: 0 auto
 $purp: #7D61B1
@@ -13,14 +13,6 @@ $gray: #eee
 
 .col-sm-2
   padding: 0
-// * 
-//   -ms-box-sizing: border-box
-//   -moz-box-sizing: border-box
-//   -webkit-box-sizing: border-box
-//   box-sizing: border-box
-//   margin: 0
-//   padding: 0
-//   border: 0
 
 // Inconsolata
 // font-family: 'Lobster', cursive
@@ -63,10 +55,6 @@ img
 .username
   padding: 0
 
-body 
-  font: 100% $body-font
-  padding-top: 170px
-
 p
   font-size: $p-font-size
   margin-bottom: 0
@@ -79,10 +67,10 @@ a
 a:hover
   color: #CC6B6B
 
-// h1
-//   font-family: $navbar-font
-//   margin-bottom: $margin-bottom
-//   margin-top: 15px
+h1
+  font-family: $navbar-font
+  margin-bottom: $margin-bottom
+  margin-top: 15px
 
 h2
   font-family: $navbar-font
@@ -102,7 +90,7 @@ h2
 
 .logo
   margin: 0 1%
-  width: 5%
+  width: 7%
   border-radius: 100px
 
 .plane
@@ -184,7 +172,7 @@ input[type=checkbox]
   background-color: #333
   border-color: #333
 
-/*****TRIP INDEX*****/
+/***** TRIP INDEX *****/
 
 .border-pink
   border: 1px solid #CC6B6B
@@ -255,6 +243,8 @@ input#post_image
   margin-bottom: 3%
 
 .new-post-trip-div
+  border-radius: 10px
+  background-color: #eee
   border: 1px solid #eee
   width: 50%
   margin: $margin-center
@@ -273,7 +263,7 @@ input#post_image
     position: relative
     display: block
     max-width: 100%
-    height: 180px
+    height: 300px
 
   .black-box
     padding: 1% 0
@@ -283,7 +273,7 @@ input#post_image
     background-color: #18191B
     font-size: 1em
     .title-link
-      font-size: 1.3em
+      font-size: 2.3em
       font-weight: bold
       color: #CC6B6B
     p
@@ -292,7 +282,6 @@ input#post_image
 .edit-trash
   display: block
   margin-top: 3%
-  // text-align: right
 
 #location-name 
   margin-top: 0
@@ -302,13 +291,14 @@ input#post_image
 .title-h4
   margin-bottom: 0
 
-/*****TRIP SHOW - POSTS*****/
+/***** TRIP SHOW - POSTS *****/
 .margin-bottom
   font-family: $navbar-font 
   font-weight: bold
   margin-bottom: 2%
 
 .nav-back
+  font-family: $navbar-font
   border-radius: 5px
   padding: .5% 3%
   background-color: #eee
@@ -324,29 +314,31 @@ input#post_image
   background-color: #eee
   border: 1px solid #DDBC9B
   text-align: center
-  // height: 450px
+  height: 450px
   .post-img 
     border-radius: 5px
   .img-responsive
     width: 100%
+    height: 250px
     margin: $margin-center
   .post-title
     color: #4CADAB
     font-weight: bold
     text-decoration: underline
   .post-content
+    font-size: 1.2em
     border-radius: 5px
     width: 80%
     margin: 2% auto
     padding: 3% 0
     border: 1px solid #eee
-    height: 120px
+    height: 100px
     overflow: auto
 
 .post-edit-trash
   text-align: right
 
-/*****NEW POST FORM*****/
+/***** NEW POST FORM *****/
 
 input#post_image
   color: #eee
@@ -371,10 +363,13 @@ textarea
   color: #333
 
 
+/***** FOOTER *****/
 
-
-
-
-
+.footer-div
+  font-family: 'Sniglet', cursive
+  padding: 2% 0
+  margin-top: 15%
+  bottom: 0
+  background-color: #f5f5f5
 
 

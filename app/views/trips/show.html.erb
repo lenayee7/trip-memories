@@ -4,7 +4,6 @@
   <%=link_to "Back to trips", trips_path(current_user), class:"nav-back" %> 
   <%= link_to "New Post", new_trip_post_path(@trip), class:"nav-back" %> 
 </div>
-
 <div class="container">
   <div class="trip-index-div text-left">
   	<% @posts.each do |post| %>
@@ -32,11 +31,8 @@
   </div>
 </div>
 <div class="edit-trash">
-<%= link_to edit_trip_path(@trip), class: "btn btn-default" do %>
-  <span class="glyphicon glyphicon-edit"></span>
-<% end %>
-<%= link_to trip_path(@trip), :method => :delete, data: {confirm: "Are you sure?"}, class: "btn btn-default" do %>
-  <span class="glyphicon glyphicon-trash"></span>
-<% end %>
+<%= link_to 'Edit Trip', edit_trip_path(@trip), class: "nav-back"  %>
+ 
+<%= link_to 'Delete', trip_path(@trip), :method => :delete, data: {confirm: "Are you sure?"}, class: "nav-back" %>
 </div>
 
