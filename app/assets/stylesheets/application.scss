@@ -12,11 +12,11 @@
  *
  	@import "bootstrap-sprockets";
 	@import "bootstrap";
-  @import "media-queries";
 
+ *= require formstyle
+ *= require mediaqueries
  *= require main
  *= require_tree .
- *= require mediaqueries
 
 
  */
