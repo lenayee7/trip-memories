@@ -13,7 +13,7 @@
 
 # TripMemories
 
-[https://sleepy-beach-27989.herokuapp.com][heroku]
+[https://sleepy-beach-27989.herokuapp.com]
 
 [heroku]: 
 
