@@ -11,6 +11,8 @@ $break-med: 960px
 $break-lg: 1160px
 $gray: #eee
 
+.col-sm-2
+  padding: 0
 // * 
 //   -ms-box-sizing: border-box
 //   -moz-box-sizing: border-box
@@ -77,10 +79,10 @@ a
 a:hover
   color: #CC6B6B
 
-h1
-  font-family: $navbar-font
-  margin-bottom: $margin-bottom
-  margin-top: 15px
+// h1
+//   font-family: $navbar-font
+//   margin-bottom: $margin-bottom
+//   margin-top: 15px
 
 h2
   font-family: $navbar-font
@@ -133,6 +135,14 @@ input[type=checkbox]
   -webkit-text-stroke-width: .5px
   -webkit-text-stroke-color: black
 
+.h1-titles
+  font-family: $navbar-font
+  font-weight: bold
+  font-size: 3.5em
+  -webkit-text-fill-color: #CC6B6B /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: .5px
+  -webkit-text-stroke-color: black
+
 .navbar-inverse .navbar-brand:hover
   color: #333
 
@@ -141,12 +151,10 @@ input[type=checkbox]
 
 .navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover
   background-color: #4CADAB
+
 .nav-stuff
   width: 100%
   margin: $margin-center
-
-.bebeh-slade
-  margin-top: 11%
 
 .navbar-inverse .navbar-nav>li>a
   padding-top: 20%
@@ -183,7 +191,6 @@ input[type=checkbox]
 
 #subtitle-container
   width: 350px
-//   margin: 0 auto
 
 .nav>li>a 
   padding: 4%
@@ -248,12 +255,7 @@ input#post_image
   margin-bottom: 3%
 
 .new-post-trip-div
-  // background-image: url(https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQqm8H0DB_6_IlVsuzGyI6OTEAjQjQZXPgnYiWx4MkdGtaLbJ3Obw)
-  // background-size: cover
-  // opacity: .8
-
   border: 1px solid #eee
-  // border-radius: 10px
   width: 50%
   margin: $margin-center
 
@@ -289,8 +291,8 @@ input#post_image
 
 .edit-trash
   display: block
-  margin-right: 3%
-  text-align: right
+  margin-top: 3%
+  // text-align: right
 
 #location-name 
   margin-top: 0
@@ -302,6 +304,8 @@ input#post_image
 
 /*****TRIP SHOW - POSTS*****/
 .margin-bottom
+  font-family: $navbar-font 
+  font-weight: bold
   margin-bottom: 2%
 
 .nav-back
@@ -311,14 +315,16 @@ input#post_image
   font-weight: bold
   font-size: 1.6em
   margin-bottom: 3%
+  border: 1px solid #B6BDBB
 
 .container
   margin: 0 auto
 
 .post-div
   background-color: #eee
-  border: 1px solid #F56868
+  border: 1px solid #DDBC9B
   text-align: center
+  // height: 450px
   .post-img 
     border-radius: 5px
   .img-responsive
@@ -327,6 +333,7 @@ input#post_image
   .post-title
     color: #4CADAB
     font-weight: bold
+    text-decoration: underline
   .post-content
     border-radius: 5px
     width: 80%
@@ -363,9 +370,6 @@ textarea
   transition: 0.2s ease-out
   color: #333
 
-
-
-/***** USER PROFILE *****/
 
 
 
