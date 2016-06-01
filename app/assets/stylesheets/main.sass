@@ -10,6 +10,9 @@ $break-small: 600px
 $break-med: 960px
 $break-lg: 1160px
 $gray: #eee
+$orangey: #FF7052
+$pink-coral: #CC6B6B
+
 
 .col-sm-2
   padding: 0
@@ -61,11 +64,11 @@ p
 
 a
   font-size: $a-tags
-  color: #CC6B6B
+  color: $orangey
   // #9d9d9d
 
 a:hover
-  color: #CC6B6B
+  color: $orangey
 
 h1
   font-family: $navbar-font
@@ -127,7 +130,7 @@ input[type=checkbox]
   font-family: $navbar-font
   font-weight: bold
   font-size: 3.5em
-  -webkit-text-fill-color: #CC6B6B /* Will override color (regardless of order) */
+  -webkit-text-fill-color: $orangey /* Will override color (regardless of order) */
   -webkit-text-stroke-width: .5px
   -webkit-text-stroke-color: black
 
@@ -175,7 +178,7 @@ input[type=checkbox]
 /***** TRIP INDEX *****/
 
 .border-pink
-  border: 1px solid #CC6B6B
+  border: 1px solid $orangey
 
 #subtitle-container
   width: 350px
@@ -275,9 +278,14 @@ input#post_image
     .title-link
       font-size: 2.3em
       font-weight: bold
-      color: #CC6B6B
+      color: $orangey
     p
       color: #E0CCCC
+
+.title-link:hover
+  background-color: #0CCCC8
+  border-radius: 5px
+  padding: 0 2%
 
 .edit-trash
   display: block
@@ -323,7 +331,7 @@ input#post_image
     margin: $margin-center
   .post-title
     font-family: $body-font
-    color: #4CADAB
+    color: $orangey
     font-weight: bold
     text-decoration: underline
   .post-content
@@ -367,6 +375,7 @@ textarea
 
 h3 
   font-family: 'Sniglet', cursive
+  font-weight: bold
 
 h4
   font-family: $navbar-font
@@ -375,11 +384,11 @@ h4
   text-decoration: underline
 
 .steps-img 
-  width: 20%
+  width: 25%
   // height: 300px
 
 .trips-index-img 
-  width: 40%
+  width: 60%
 /***** FOOTER *****/
 
 .footer-div
@@ -387,6 +396,17 @@ h4
   padding: 2% 0
   margin-top: 15%
   bottom: 0
-  background-color: #91C5C1
+  background-color: $orangey
+
+.social-icons
+  display: inline-block
+  margin-right: 1%
+
+.footer-text
+  font-size: 1.3em
+  font-weight: bold
+  font-family: Lobster
+
+
 
 
