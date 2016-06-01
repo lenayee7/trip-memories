@@ -13,18 +13,15 @@ body {
   padding-top: 100px;
   width: 100%;
   height: 100%;
+  background-color: #eee;
   background: url(http://www.otsglobe.com/_uploads/images/backgrounds/background-oss.jpg) repeat fixed;
   background-size: 100% 100%;
   font-weight: 200;
 }
 
 .login {
- /* position: relative;
-  top: 50%;*/
   width: 300px;
-  /*display: table;*/
   margin: 4% auto;
-  /*margin: -220px auto 0 auto;*/
   background: #fff;
   border-radius: 10px;
 }
@@ -58,14 +55,6 @@ body {
   width: 90%;
   margin: 5px auto;
 }
-/*.input span {
-  position: absolute;
-  display: block;
-  color: #d4d4d4;
-  left: 10px;
-  top: 8px;
-  font-size: 20px;
-}*/
 
 .input input {
   width: 90%;
@@ -75,7 +64,6 @@ body {
   border-radius: 4px;
   transition: 0.2s ease-out;
   color: #333;
-  /*#a1a1a1*/
 }
 
 .input input:focus {

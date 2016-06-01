@@ -1,38 +1,35 @@
 
 ## Trip-Memories
 
-* Ruby version - ruby 2.3.0p0
+* Ruby version - ruby 2.3.0
 
 ## MVP
 - [X] Create User Account 
 - [X] Log in / Log out
 - [X] User can create a trip 
 - [X] User can add posts to a trip
-- [X] Projects are funded if enough money is raised in a set amount of time.
-- [X] Projects are not funded if funding goal is not met by deadline.
+- [X] Models - User, Trip & Post has CRUD functions
 
 # TripMemories
 
-[https://sleepy-beach-27989.herokuapp.com]
-
-[heroku]: 
+#### Heroku-[https://sleepy-beach-27989.herokuapp.com]
 
 ## Description
 
-Trip Memories allows you to save your memories for that particular trip. 
+Trip Memories allows you to save your highlights by creating posts for that particular trip. 
 
-
-![Trip-Memories](https://s3.amazonaws.com/trip-memories/trip-memories.png)
-
-Devise Authentication
-
-Paperclip gem allows upload photos to posts
+![Sign Up](https://s3.amazonaws.com/trip-memories/signup.jpg)
+![My Trips](https://s3.amazonaws.com/trip-memories/tripsindex.jpg)
+![My Posts](https://s3.amazonaws.com/trip-memories/posts-index.jpg)
 
 ###Technologies
-*Ruby on Rails
-*Bootstrap
-*Heroku
+* Ruby on Rails 
+* Bootstrap
+* Heroku
+* jQuery
 
 ####Others
-*Paperclip
-*AWS - S3 Services
+* Paperclip
+* AWS - S3 Services
+* SASS
+

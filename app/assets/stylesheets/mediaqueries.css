@@ -99,6 +99,10 @@
 
 @media (max-width: 525px) {
 
+  .trip-memories-container {
+    margin: 0;
+  }
+
   body {
     padding-top:  60px;
   }
