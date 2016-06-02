@@ -18,9 +18,11 @@
 
 Trip Memories allows you to save your highlights by creating posts for that particular trip. 
 <img src="https://s3.amazonaws.com/trip-memories/login-signup.png" alt="Sign Up" width="60%" />
+<img src="https://s3.amazonaws.com/trip-memories/trips-index2.png" alt="Trips Index" width="60%" />
+<img src="https://s3.amazonaws.com/trip-memories/posts-index2.png" alt="Posts Index" width="60%" />
 <!-- ![Sign Up](https://s3.amazonaws.com/trip-memories/login-signup.png) -->
-![My Trips](https://s3.amazonaws.com/trip-memories/trips-index2.png)
-![My Posts](https://s3.amazonaws.com/trip-memories/posts-index2.png)
+<!-- ![My Trips](https://s3.amazonaws.com/trip-memories/trips-index2.png)
+![My Posts](https://s3.amazonaws.com/trip-memories/posts-index2.png) -->
 
 ###Technologies
 * Ruby on Rails 
