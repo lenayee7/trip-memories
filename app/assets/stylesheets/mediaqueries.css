@@ -109,6 +109,7 @@
 
   #trip-memories-link {
     font-size: 2.5em;
+    display: inline-block;
   }
 
   .h1-titles {
@@ -117,6 +118,7 @@
 
   .round-image-50.avatar {
     width: 20%;
+    display: inline-block;
   }
 
   .logo {
@@ -145,7 +147,17 @@
   }
 
   .trip-memories-container {
-    margin: 5% auto 2%;
+    margin: 0 auto 2%;
+  }
+
+@media (max-width: 400px) {
+
+  body {
+    padding-top: 0;
+  }
+
+  .hide-nav {
+    display: none;
   }
 
 }
