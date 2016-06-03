@@ -37,7 +37,7 @@ gem 'aws-sdk', '< 2.0'
 
 gem 'sass-mediaqueries-rails'
 
-gem 'font-awesome-sass'
+gem "font-awesome-rails"
 
 
 # Use ActiveModel has_secure_password

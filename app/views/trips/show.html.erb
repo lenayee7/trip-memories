@@ -5,25 +5,27 @@
   <%= link_to "New Post", new_trip_post_path(@trip), class:"nav-back" %> 
 </div>
 <div class="container">
-  <div class="trip-index-div text-left">
+  <div class="row trip-index-div">
   	<% @posts.each do |post| %>
-      <div class="post-div col-md-4 col-sm-6 col-xs-12">
-    		<h4><%= link_to post.title, edit_trip_post_path({id: post.id, trip_id: @trip.id}), class:"post-title" %></h4>
-        <% if post.image %>
-      		<%= link_to image_tag(post.image.url, class: "img-responsive post-img "), post.image.url, target:'_blank' %>
-        <% else %>
-          No attachment available!
-        <% end %>
-    		<p class="post-content"><%= post.content %></p>
-        <div class="post-date ">
-          <p class="pull-left"><small><%= post.created_at.strftime("%a,%Y-%b-%d %I:%M")%> </small></p>
-          <div class="post-edit-trash">
-            <%= link_to edit_trip_post_path({id: post.id, trip_id: @trip.id}), class: "btn btn-default" do %>
-              <span class="glyphicon glyphicon-edit"></span>
-            <% end %>
-            <%= link_to trip_post_path({id: post.id, trip_id: @trip.id}),:method => :delete, class: "btn btn-default" do %>
-              <span class="glyphicon glyphicon-trash"></span>
-            <% end %>
+      <div class="col-md-6 col-xs-12">
+        <div class="post-div col-xs-12">
+      		<h4><%= link_to post.title, edit_trip_post_path({id: post.id, trip_id: @trip.id}), class:"post-title" %></h4>
+          <% if post.image %>
+        		<%= link_to image_tag(post.image.url, class: "img-responsive post-img "), post.image.url, target:'_blank' %>
+          <% else %>
+            No attachment available!
+          <% end %>
+      		<p class="post-content"><%= post.content %></p>
+          <div class="post-date ">
+            <p class="pull-left"><small><%= post.created_at.strftime("%a,%Y-%b-%d %I:%M")%> </small></p>
+            <div class="post-edit-trash">
+              <%= link_to edit_trip_post_path({id: post.id, trip_id: @trip.id}), class: "btn btn-default" do %>
+                <span class="glyphicon glyphicon-edit"></span>
+              <% end %>
+              <%= link_to trip_post_path({id: post.id, trip_id: @trip.id}),:method => :delete, class: "btn btn-default" do %>
+                <span class="glyphicon glyphicon-trash"></span>
+              <% end %>
+            </div>
           </div>
         </div>
       </div>
