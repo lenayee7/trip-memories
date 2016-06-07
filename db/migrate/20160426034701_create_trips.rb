@@ -1,8 +1,6 @@
 class CreateTrips < ActiveRecord::Migration
   def change
     create_table :trips do |t|
-        t.float :latitude
-        t.float :longitude
     	t.string :location, null: false
     	t.string :title, null: false
     	t.date :start_date

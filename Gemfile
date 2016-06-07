@@ -31,8 +31,6 @@ gem 'devise'
 
 gem "paperclip"
 
-gem 'dotenv-rails', :require => 'dotenv/rails-now', :groups => [:development, :test]
-
 gem 'aws-sdk', '< 2.0'
 
 gem 'sass-mediaqueries-rails'

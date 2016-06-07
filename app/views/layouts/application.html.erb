@@ -8,12 +8,8 @@
   <!-- BOOTSTRAP -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-
-  <!-- JQUERY UI -->
-  <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"   integrity="sha256-xNjb53/rY+WmG+4L6tTl9m6PpqknWZvRt0rO1SRnJzw="   crossorigin="anonymous"></script>
-
-  <!-- GOOGLE MAPS -->
-  <!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBpM9SpDUz23n_JY60c3pX2jYxdo1f60Jg&?libraries=places"></script> -->
+  
+  <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=#{ENV['GOOGLE_API_KEY']}&libraries=places" %>
 
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
@@ -34,6 +30,6 @@
 	<%= yield %>
   
   <%= render "pages/footer" %>
-  <script src="https://maps.googleapis.com/maps/api/js?AIzaSyBpM9SpDUz23n_JY60c3pX2jYxdo1f60Jg&libraries=places&callback=initMap" async defer></script>
+
 </body>
 </html>
