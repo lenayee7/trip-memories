@@ -1,5 +1,7 @@
 <!-- <div class="container-fluid"> -->
- 
+ <% content_for :javascripts do %>
+  <%= javascript_include_tag "googleplaces.js" %>
+ <% end %>
 
   <div class="new-post-trip-div">
     <h2 class="legend padding">Where you Trippin to?</h2>

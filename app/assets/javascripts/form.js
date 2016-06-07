@@ -13,4 +13,3 @@ $(".login").submit(function(){
   $("input").css({"border-color":"#2ecc71"});
   return false;
 });
-console.log('test')

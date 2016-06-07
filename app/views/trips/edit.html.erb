@@ -1,3 +1,7 @@
+<% content_for :javascripts do %>
+  <%= javascript_include_tag "googleplaces.js" %>
+<% end %>
+
 <div class="container-fluid">
   <div class="new-post-trip-div">
     <div class="padding">
@@ -6,27 +10,30 @@
 
       <%= form_for @trip do |f| %>
        
-         <div class="field input">
+        <div class="field input">
           <%= f.label :title %>
           <%= f.text_field :title %>
         </div>
        
-         <div class="field input">
+        <div class="field input">
+          <div class="map-container">
+            <div id="map"></div>
+          </div>
           <%= f.label :location %>
-          <%= f.text_field :location %>
+          <%= f.text_field :location, id:"pac-input" %>
         </div>
 
-          <div class="field input">
+        <div class="field input">
           <%= f.label :start_date %>
           <%= f.date_field :start_date %>
         </div>
 
-         <div class="field input">
+        <div class="field input">
          <%= f.label :end_date %>
          <%= f.date_field :end_date %>
         </div>
 
-         <div class="field input">
+        <div class="field input">
           <%= f.label :cover_image %><br>
           <%= f.file_field :cover_image %>
         </div>
