@@ -1,4 +1,8 @@
 class Trip < ActiveRecord::Base
+  
+  # geocoded_by :location
+  # after_validation :geocode
+  
 	validates_presence_of :title
 	belongs_to :user
 	has_many :posts, dependent: :destroy

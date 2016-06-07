@@ -1,0 +1,10 @@
+ .map-container {
+    margin: 0 auto;
+    width: 800px; 
+ }
+
+ #map {
+    background-color: #eee;
+    height: 400px;
+   
+ }

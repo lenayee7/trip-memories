@@ -12,7 +12,20 @@
      
       <div class="field input">
         <%= f.label :location %>
-        <%= f.text_field :location %>
+        <%= f.text_field :location, id:"pac-input" %>
+        <div id="type-selector" class="controls">
+          <input type="radio" name="type" id="changetype-all" checked="checked">
+          <label for="changetype-all">All</label>
+
+          <input type="radio" name="type" id="changetype-establishment">
+          <label for="changetype-establishment">Establishments</label>
+
+          <input type="radio" name="type" id="changetype-address">
+          <label for="changetype-address">Addresses</label>
+
+          <input type="radio" name="type" id="changetype-geocode">
+          <label for="changetype-geocode">Geocodes</label>
+        </div>
       </div>
 
       <div class="field input">

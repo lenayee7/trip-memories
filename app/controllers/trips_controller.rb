@@ -19,7 +19,7 @@ class TripsController < ApplicationController
 		if @trip.save
 			flash[:success] ="You have successfully made a new trip."
 			redirect_to @trip
-		else 
+	else 
 			flash[:error] = "Could not save trip: #{@trip.errors.full_messages.join(".")}"
 			render action: "new"
 		end
@@ -55,7 +55,7 @@ class TripsController < ApplicationController
 	private
 
 		def trip_params
-			params.require(:trip).permit(:title, :location, :cover_image, :start_date, :end_date)
+			params.require(:trip).permit(:title, :location, :cover_image, :start_date, :end_date, :latitude, :longitude)
 		end
 
 end
