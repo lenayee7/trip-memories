@@ -107,10 +107,10 @@
     padding-right: 0;
   }
 
-/*
+
   .hide-nav {
     display: none;
-  }*/
+  }
 
   .trip-memories-container {
     margin: 0;
@@ -126,11 +126,11 @@
   }
 
   .h1-titles {
-    font-size: 2.5em;
+    font-size: 2em;
   }
 
   .round-image-50.avatar {
-    width: 14%;
+    width: 10%;
     display: inline-block;
   }
 
@@ -148,7 +148,7 @@
   }
 
   .h2-titles {
-    font-size: 2.5em;
+    font-size: 2em;
     padding: 2%;
   }
 
@@ -165,8 +165,34 @@
 
 @media (max-width: 400px) {
 
+  #trip-memories-link {
+    float: left;
+    text-align: left;
+  }
+
+  .round-image-50.avatar {
+    
+  }
+
   body {
     padding-top: 0;
+  }
+
+  .container-fluid {
+    padding: 0;
+  }
+
+  .trip-index-div {
+    max-width: 100%;
+  }
+
+  .col-xs-12 {
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+
+  .post-div {
+    margin-bottom: 2%;
   }
 
 }
