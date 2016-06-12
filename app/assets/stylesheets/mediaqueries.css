@@ -1,5 +1,10 @@
 @media (max-width: 1000px) {
 
+  .trip-index-div {
+    width: 95%;
+    margin: 0 auto;
+  }
+
   .logo {
     margin-bottom: 2%;
     width: 8%;
@@ -73,6 +78,9 @@
 
 @media (max-width: 595px) {
 
+  .trip-index-div {
+    width: 100%;
+  }
 
   a{
     font-size: 1em;

@@ -1,4 +1,4 @@
-<h2 class="h1-titles"><%= @trip.title %></h2>
+<h2><%= link_to @trip.title, edit_trip_path(@trip), class:"h2-titles-edit" %></h2>
 <p class="margin-bottom"><%= @trip.location %></p>
 <div class="margin-bottom">
   <%=link_to "Back to trips", trips_path(current_user), class:"nav-back" %> 
