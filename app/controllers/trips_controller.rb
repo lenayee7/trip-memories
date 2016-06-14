@@ -14,7 +14,6 @@ class TripsController < ApplicationController
 	end
 
 	def create
-		# @user = current_user
 		@trip = current_user.trips.build(trip_params)
 		if @trip.save
 			flash[:success] ="You have successfully made a new trip."
@@ -23,14 +22,12 @@ class TripsController < ApplicationController
 			flash[:error] = "Could not save trip: #{@trip.errors.full_messages.join(".")}"
 			render action: "new"
 		end
-
-    # redirect_to @trip, success: "You have successfully made a new trip."
-		# @trip = current_user.trips.create(trip_params)
   end
 
 	def show
 		@trip = current_user.trips.find(params[:id])
-		@posts = @trip.posts.order(created_at: :desc)
+		@posts = @trip.posts
+		# @posts = @trip.posts.order(created_at: :desc)
 			p current_user
 		render :show
 	end

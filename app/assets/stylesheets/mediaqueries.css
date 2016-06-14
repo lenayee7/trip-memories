@@ -99,7 +99,7 @@
   }
 
   .round-image-50.avatar {
-    width: 18%
+    width: 9%
   }
 
   .trip-btns {
@@ -170,9 +170,7 @@
 }
 
 @media (max-width: 400px) {
-  .h2-titles-edit {
-    font-size: 1.3em;
-  }
+ 
   .round-image-50.avatar {
    width: 16%;
    display: inline-block;
