@@ -78,6 +78,10 @@
 
 @media (max-width: 595px) {
 
+  .show-container {
+    width: 100%;
+  }
+
   .trip-index-div {
     width: 100%;
   }
