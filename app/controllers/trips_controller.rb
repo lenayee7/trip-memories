@@ -26,8 +26,7 @@ class TripsController < ApplicationController
 
 	def show
 		@trip = current_user.trips.find(params[:id])
-		@posts = @trip.posts
-		# @posts = @trip.posts.order(created_at: :desc)
+		@posts = @trip.posts.order(created_at: :desc)
 			p current_user
 		render :show
 	end
