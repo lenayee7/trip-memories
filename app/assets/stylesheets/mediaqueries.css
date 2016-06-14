@@ -115,7 +115,6 @@
     padding-right: 0;
   }
 
-
   .hide-nav {
     display: none;
   }
@@ -129,12 +128,11 @@
   }
 
   #trip-memories-link {
-    font-size: 2em;
-    display: inline-block;
+    font-size: 2.3em;
   }
 
   .h1-titles {
-    font-size: 2em;
+    font-size: 2.7em;
   }
 
   .round-image-50.avatar {
@@ -172,14 +170,16 @@
 }
 
 @media (max-width: 400px) {
-
-  #trip-memories-link {
-    float: left;
-    text-align: left;
+  .h2-titles-edit {
+    font-size: 1.3em;
+  }
+  .round-image-50.avatar {
+   width: 16%;
+   display: inline-block;
   }
 
-  .round-image-50.avatar {
-    
+  .trip-btns {
+    background-color: #FBFBFB;
   }
 
   body {

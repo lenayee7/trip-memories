@@ -4,7 +4,7 @@
         <div>
           <%= link_to 'Trip Memories', root_path, id: 'trip-memories-link' %><br><span class="hide-nav"><img class=" plane" src="https://s3.amazonaws.com/trip-memories/grayplane.jpg"></span>
             <% if user_signed_in? %>
-              <span class="inline"><%= image_tag current_user.avatar, class:"round-image-50 avatar" %></span>
+              <span class="hide-nav inline"><%= image_tag current_user.avatar, class:"round-image-50 avatar" %></span>
             <% else %>
               <span class="hide-nav"><img class="logo " src="https://s3.amazonaws.com/trip-memories/planeworld2.jpg"></span>
             <% end %>  
