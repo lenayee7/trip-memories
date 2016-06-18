@@ -1,5 +1,5 @@
-$navbar-font: 'Lobster', cursive
-$body-font: 'Ruluko', sans-serif
+$navbar-font: 'Lobster'
+$body-font: 'Lobster'
 $p-font-size: 1em
 $a-tags: 1em
 $margin-center: 0 auto
@@ -16,18 +16,8 @@ $pink-coral: #CC6B6B
 .col-sm-2
   padding: 0
 
-
-
 .hide-pic
   display: none
-// Inconsolata
-// font-family: 'Lobster', cursive
-
-// font-family: 'Kotta One', serif
-
-// font-family: 'Sniglet', cursive
-
-// font-family: 'Ruluko', sans-serif
 
 .home-img
   width: 90%
@@ -88,9 +78,9 @@ h2
   font: 100% $navbar-font  
 
 .navbar-inverse
-  background-image: url(https://s3.amazonaws.com/trip-memories/navbar.jpg)
-  background-size: 100% 100%
-  // background-color: #CFFF0D
+  opacity: .9
+  background-image: url(https://s3.amazonaws.com/trip-memories/transportation.jpg)
+  background-color: #303233
   // border-color: #eee
   border-bottom: 1px solid #eee
 
@@ -100,10 +90,10 @@ h2
   border-radius: 100px
 
 .plane
-  width: 4%
+  width: 2.5%
 
 .round-image-50.avatar
-  width: 6%
+  width: 4%
 
 input[type=checkbox]
   margin: 0 auto
@@ -203,7 +193,7 @@ input[type=checkbox]
 
 .trip-btns
   font-family: Lobster
-  background-color: #FBFBFB
+  background-color: #4C4C4C
   margin-bottom: 2%
   padding: 2% 4%
 
@@ -249,7 +239,6 @@ input#post_image
   padding: 1% 4%
 
 .h2-titles 
-  font-family: 'Ruluko', sans-serif
   padding: 2%
   border-radius: 10px
   background-color: #eee
@@ -263,14 +252,16 @@ input#post_image
   margin: $margin-center
 
 .trip-index-div 
-  max-width: 95%
-  margin: 0 auto
+  padding-left: 15px
+  padding-right: 15px
 
 .trip-div
   border-radius: 25px
-  padding: 5px 5px
+  padding: 5px 3px
   position: relative
   text-align: center
+  min-height: 400px
+  max-height: 400px
   .cover-image
     border: 2px solid #EFD4B6
     position: relative
@@ -279,11 +270,12 @@ input#post_image
     height: 250px
 
   .black-box
+    font-family: 'Ruluko', sans-serif
     padding: 1% 0
     vertical-align: middle
     color: #FFF
     border: 2px solid #EFD4B6
-    background-color: #18191B
+    background-color: #3E3C3D
     font-size: 1em
     .title-link
       font-size: 2.3em
@@ -312,7 +304,7 @@ input#post_image
 /***** TRIP SHOW - POSTS *****/
 
 .show-container 
-  width: 550px
+  width: 768px
   margin: 0 auto
 
 .margin-bottom
@@ -333,6 +325,7 @@ input#post_image
   margin: 0 auto
 
 .post-div
+  height: 580px
   background-color: #eee
   border: 1px solid #DDBC9B
   text-align: center
@@ -390,7 +383,6 @@ textarea
 
 h3 
   color: #eee
-  font-family: 'Sniglet', cursive
   font-weight: bold
 
 h4
@@ -402,14 +394,13 @@ h4
 
 .steps-img 
   width: 25%
-  // height: 300px
 
 .trips-index-img 
   width: 60%
+  
 /***** FOOTER *****/
 
 .footer-div
-  font-family: 'Sniglet', cursive
   padding: 2% 0
   margin-top: 15%
   bottom: 0

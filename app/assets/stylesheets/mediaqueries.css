@@ -1,7 +1,6 @@
 @media (max-width: 1000px) {
 
   .trip-index-div {
-    width: 95%;
     margin: 0 auto;
   }
 
@@ -11,16 +10,29 @@
   }
 
   .plane {
-    width: 5%;
+    width: 4%;
   }
 
   .round-image-50.avatar {
-    width: 9%
+    width: 6%
   }
 
 }
 
 @media (max-width: 810px) {
+
+  .show-container {
+    width: 600px;
+  }
+
+  .trip-div {
+    padding: 0 8% 1%;
+    min-height: 0;
+  }
+
+  .post-div {
+    height: auto;
+  }
 
   .login-signup {
     padding: 0;
@@ -32,19 +44,33 @@
   }
 
   .plane {
-    width: 7%;
+    width: 5%;
   }
 
   .round-image-50.avatar {
-    width: 10%
+    width: 7%
   }
 
 }
 
 @media (max-width: 695px) {
+
+  .trip-div.col-lg-3.col-md-4.col-sm-6.col-xs-12 {
+    padding: 0 8% 2%;
+  }
   
   .post-div {
     height: auto;
+  }
+
+  .trip-div {
+    padding: 0 13% 1%;
+    min-height: 0;
+  }
+
+  .trip-index-div {
+    padding-left: 15px;
+    padding-right: 15px;
   }
   
   .post-img.img-responsive {
@@ -53,9 +79,8 @@
     
   .trip-div
   .cover-image {
-    max-width: 100%;
-    height: auto;
-    max-height: 500px;
+    width: 100%;
+    /*height: auto;*/
   }
 
   .login {
@@ -69,6 +94,10 @@
 }
 
 @media (max-width: 595px) {
+
+  .trip-div {
+    padding: 2% 0;
+  }
 
   .show-container {
     width: 100%;
@@ -106,10 +135,18 @@
 
 @media (max-width: 525px) {
 
-  .container {
+ .map-container {
+    width: 90%; 
+ }
+
+ .trip-div.col-lg-3.col-md-4.col-sm-6.col-xs-12 {
+    padding: 0 2% 2%;
+  }
+
+ .container {
     padding-left: 0;
     padding-right: 0;
-  }
+ }
 
   .hide-nav {
     display: none;
@@ -167,10 +204,13 @@
 }
 
 @media (max-width: 400px) {
+
+  .trip-div.col-lg-3.col-md-4.col-sm-6.col-xs-12 {
+    padding: 1% 2%;
+  }
  
   .round-image-50.avatar {
-   width: 12%;
-   display: inline-block;
+   width: 9%;
   }
 
   .trip-btns {
@@ -190,12 +230,12 @@
   }
 
   .col-xs-12 {
-    padding-right: 5px;
-    padding-left: 5px;
+    padding-right: 15px;
+    padding-left: 15px;
   }
 
   .post-div {
     margin-bottom: 2%;
-  }
+  5
 
 }

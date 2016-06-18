@@ -23,7 +23,7 @@
         <%= f.password_field :password, autocomplete: "off" %>
       </div>
 
-      <div class="field">
+      <div class="field input">
         <%= f.label :password_confirmation %><br />
         <%= f.password_field :password_confirmation, autocomplete: "off" %>
       </div>
@@ -42,10 +42,10 @@
         <%= f.submit "Update" %>
       </div>
     <% end %>
-
+<!-- 
     <h3>Cancel my account</h3>
 
-    <p>Unhappy? <%= button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete %></p>
+    <p>Unhappy? <%= button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete %></p> -->
 
     <%# link_to "Back", trips_path(current_user), class:"nav-back" %>
   </div>

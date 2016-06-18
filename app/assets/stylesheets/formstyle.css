@@ -9,13 +9,12 @@
 }
 html,
 body {
-  font-family: 'Ruluko', sans-serif;
+  font-family: Lobster;
   padding-top: 100px;
   width: 100%;
   height: 100%;
-  background-color: #C1BBBB;
-  background-image: url(https://s3.amazonaws.com/trip-memories/IMG_0979.jpg);
-  background: url(http://www.otsglobe.com/_uploads/images/backgrounds/background-oss.jpg) repeat fixed;
+  background-color: #1ACDC7;
+  /*background: url(http://www.otsglobe.com/_uploads/images/backgrounds/background-oss.jpg) repeat fixed;*/
   background-size: 100% 100%;
   font-weight: 200;
 }
@@ -28,7 +27,6 @@ body {
 }
 .legend {
   border-radius: 10px;
-  font-family: 'Sniglet', cursive;
   position: relative;
   width: 100%;
   display: block;
