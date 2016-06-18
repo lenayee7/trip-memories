@@ -1,46 +1,45 @@
-<!-- <div class="container-fluid"> -->
  <% content_for :javascripts do %>
   <%= javascript_include_tag "googleplaces.js" %>
  <% end %>
 
-  <div class="new-post-trip-div">
-    <h2 class="legend padding">Where you Trippin to?</h2>
-    <div class="margin-bottom"><%= link_to "Back to My Trips", trips_path, class:"nav-back" %>
-    </div>
-    <%= form_for @trip, url: {action: "create"}, html: {multipart: true } do |f| %>
-     
-      <div class="field input">
-        <%= f.label :title %>
-        <%= f.text_field :title %>
-      </div>
-     
-      <div class="field input">
-        <div class="map-container map-form">
-          <div id="map"></div>
-        </div>
-        <%= f.label :location %>
-        <%= f.text_field :location, id:"pac-input" %>
-      </div>
-
-      <div class="field input">
-        <%= f.label :start_date %>
-        <%= f.date_field :start_date %>
-      </div>
-
-      <div class="field input">
-       <%= f.label :end_date %>
-       <%= f.date_field :end_date %>
-      </div>
-
-      <div class="field">
-        <%= f.file_field :cover_image %>
-      </div>
-     
-      <div class="actions">
-        <%= f.submit %>
-      </div>
-      
-    <% end %>
+<div class="new-post-trip-div">
+  <h2 class="legend padding">Where you Trippin to?</h2>
+  <div class="margin-bottom"><%= link_to "Back to My Trips", trips_path, class:"nav-back" %>
   </div>
-<!-- </div> -->
+  <%= form_for @trip, url: {action: "create"}, html: {multipart: true } do |f| %>
+   
+    <div class="field input">
+      <%= f.label :title %>
+      <%= f.text_field :title %>
+    </div>
+   
+    <div class="field input">
+      <%= f.label :location %>
+      <div class="map-container map-form">
+        <div id="map"></div>
+      </div>
+      <%= f.text_field :location, id:"pac-input" %>
+    </div>
+
+    <div class="field input">
+      <%= f.label :start_date %>
+      <%= f.date_field :start_date %>
+    </div>
+
+    <div class="field input">
+     <%= f.label :end_date %>
+     <%= f.date_field :end_date %>
+    </div>
+
+    <div class="field">
+      <%= f.file_field :cover_image %>
+    </div>
+   
+    <div class="actions">
+      <%= f.submit %>
+    </div>
+    
+  <% end %>
+</div>
+
 

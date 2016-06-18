@@ -2,9 +2,18 @@ class TripsController < ApplicationController
 
 	before_action :authenticate_user!
 
+	def get_coordinates
+		@user = current_user
+		@trips = current_user.trips.order(created_at: :desc)
+		@trip_coords = @trips.map do |trip| 
+			[trip.latitude,trip.longitude]
+		end
+	  render json: @trip_coords
+	end
+
 	def index
 		@user = current_user
-		@trips = current_user.trips.order(updated_at: :desc)
+		@trips = current_user.trips.order(created_at: :desc)
 		render :index
 	end
 
