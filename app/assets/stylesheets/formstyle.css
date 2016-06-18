@@ -13,9 +13,10 @@ body {
   padding-top: 100px;
   width: 100%;
   height: 100%;
-  background-color: #1ACDC7;
-  /*background: url(http://www.otsglobe.com/_uploads/images/backgrounds/background-oss.jpg) repeat fixed;*/
-  background-size: 100% 100%;
+  background-color: #eee;
+  /*background-image: url( background: url(https://s3.amazonaws.com/trip-memories/beachbackground.jpg) repeat fixed;*/
+  background: url(https://s3.amazonaws.com/trip-memories/beachbackground.jpg) repeat fixed;
+  background-size: cover;
   font-weight: 200;
 }
 
