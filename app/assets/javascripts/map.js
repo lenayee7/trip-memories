@@ -13,7 +13,7 @@ function initialize(location) {
 
   $.ajax({
     type:"GET",
-    url:"http://localhost:3000/get_coordinates",
+    url:"http://" + window.location.host+ "/get_coordinates",
     dataType:"json",
     success: function(data){
       var markers = data;
