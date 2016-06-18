@@ -6,7 +6,7 @@ class TripsController < ApplicationController
 		@user = current_user
 		@trips = current_user.trips.order(created_at: :desc)
 		@trip_coords = @trips.map do |trip| 
-			[trip.latitude,trip.longitude]
+			[trip.title,trip.location,trip.latitude,trip.longitude,trip.id]
 		end
 	  render json: @trip_coords
 	end

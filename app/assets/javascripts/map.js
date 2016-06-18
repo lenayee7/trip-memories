@@ -13,13 +13,16 @@ function initialize(location) {
 
   $.ajax({
     type:"GET",
-    url:"https://" + window.location.host+ "/get_coordinates",
+    url:"http://" + window.location.host+ "/get_coordinates",
     dataType:"json",
     success: function(data){
       var markers = data;
       for( i = 0; i < markers.length; i++ ) {
-        var lat = markers[i][0];
-        var long = markers[i][1];
+        var title = markers[i][0];
+        var location = markers[i][1];
+        var lat = markers[i][2];
+        var long = markers[i][3];
+        var trip_id = markers[i][4];
         var latLong = new google.maps.LatLng(lat,long);
         var marker = new google.maps.Marker({
           position: latLong,
@@ -27,6 +30,16 @@ function initialize(location) {
         });
         bounds.extend(latLong);
         map.fitBounds(bounds);
+
+        var content =  '<a href="/trips/' + trip_id + '">' + title + '</a><br/>' + location
+        var infowindow = new google.maps.InfoWindow()
+        google.maps.event.addListener(marker,'click', (function(marker,content,infowindow){ 
+            return function() {
+               infowindow.setContent(content);
+               infowindow.open(map,marker);
+            };
+        })(marker,content,infowindow)); 
+
       }
     }
   });

@@ -3,13 +3,13 @@
 <% end %>
 
 <div class="container-fluid">
-  <%= image_tag current_user.avatar, class:"round-image-50 avatar hide-pic" %>
+  <h1 class="h1-titles"> <%= current_user.name %>'s <%= image_tag current_user.avatar, class:"round-image-50 avatar hide-pic" %>Trips </h1>
+  <p class="trip-count margin-bottom">You have <%= @trips.length %> trips!</p>
+ 
   <div class="map-container">
     <div id="map-index"></div>
   </div>  
 
-  <h1 class="h1-titles"><%= current_user.name %>'s Trips</h1>
-  <p class="trip-count margin-bottom">You have <%= @trips.length %> trips!</p>
   <div class="col-12-xs trip-index-div text-left">
   	<% @trips.each do |trip| %>
      <div class="trip-div col-lg-3 col-md-4 col-sm-6 col-xs-12">
@@ -18,6 +18,7 @@
         <p>
         <%= link_to trip.title, trip_path(trip), class:"title-link underline" %><br>
         <%= trip.location %><br>
+        <%= trip.start_date %> - <%= trip.end_date %><br>
         <%= trip.posts.length %> - posts</p>
       </div>
     
