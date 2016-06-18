@@ -12,7 +12,7 @@ Rails.application.configure do
     }
   } 
 
-
+  GOOGLE_API_KEY= ENV['GOOGLE_API_KEY']
 
   # Settings specified here will take precedence over those in config/application.rb.
 

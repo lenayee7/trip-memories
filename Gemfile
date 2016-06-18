@@ -31,13 +31,15 @@ gem 'devise'
 
 gem "paperclip"
 
-gem 'dotenv-rails', :require => 'dotenv/rails-now', :groups => [:development, :test]
-
 gem 'aws-sdk', '< 2.0'
 
 gem 'sass-mediaqueries-rails'
 
 gem "font-awesome-rails"
+
+gem 'gmaps4rails'
+
+gem 'geocoder'
 
 
 # Use ActiveModel has_secure_password

@@ -2,9 +2,18 @@ class TripsController < ApplicationController
 
 	before_action :authenticate_user!
 
+	def get_coordinates
+		@user = current_user
+		@trips = current_user.trips.order(created_at: :desc)
+		@trip_coords = @trips.map do |trip| 
+			[trip.latitude,trip.longitude]
+		end
+	  render json: @trip_coords
+	end
+
 	def index
 		@user = current_user
-		@trips = current_user.trips.order(updated_at: :desc)
+		@trips = current_user.trips.order(created_at: :desc)
 		render :index
 	end
 
@@ -18,7 +27,7 @@ class TripsController < ApplicationController
 		if @trip.save
 			flash[:success] ="You have successfully made a new trip."
 			redirect_to @trip
-		else 
+	else 
 			flash[:error] = "Could not save trip: #{@trip.errors.full_messages.join(".")}"
 			render action: "new"
 		end
@@ -27,7 +36,6 @@ class TripsController < ApplicationController
 	def show
 		@trip = current_user.trips.find(params[:id])
 		@posts = @trip.posts.order(created_at: :desc)
-			p current_user
 		render :show
 	end
 
@@ -51,7 +59,7 @@ class TripsController < ApplicationController
 	private
 
 		def trip_params
-			params.require(:trip).permit(:title, :location, :cover_image, :start_date, :end_date)
+			params.require(:trip).permit(:title, :location, :cover_image, :start_date, :end_date, :latitude, :longitude)
 		end
 
 end

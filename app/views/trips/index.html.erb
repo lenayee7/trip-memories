@@ -1,5 +1,13 @@
+<% content_for :javascripts do %>
+  <%= javascript_include_tag "map.js" %>
+<% end %>
+
 <div class="container-fluid">
   <%= image_tag current_user.avatar, class:"round-image-50 avatar hide-pic" %>
+  <div class="map-container">
+    <div id="map-index"></div>
+  </div>  
+
   <h1 class="h1-titles"><%= current_user.name %>'s Trips</h1>
   <p class="trip-count margin-bottom">You have <%= @trips.length %> trips!</p>
   <div class="col-12-xs trip-index-div text-left">
@@ -9,9 +17,7 @@
       <div class="black-box col-xs-12">
         <p>
         <%= link_to trip.title, trip_path(trip), class:"title-link underline" %><br>
-      <!--   <h5><%= trip.start_date %> - <%= trip.end_date %></h5> -->
         <%= trip.location %><br>
-    <!--     <%= trip.start_date %> - <%= trip.end_date %><br> -->
         <%= trip.posts.length %> - posts</p>
       </div>
     
