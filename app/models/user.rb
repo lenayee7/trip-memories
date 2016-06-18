@@ -1,6 +1,6 @@
 class User < ActiveRecord::Base
   has_many :trips
-  has_attached_file :avatar, styles: { medium: "300x300>", thumb: "20x20>" }, :default_url => "https://s3.amazonaws.com/trip-memories/whale.jpg""
+  has_attached_file :avatar, styles: { medium: "300x300>", thumb: "20x20>" }, :default_url => "https://s3.amazonaws.com/trip-memories/whale.jpg"
   validates :email, uniqueness: true
   validates_attachment :avatar,
   content_type: { content_type: ["image/jpeg", "image/gif", "image/png"] }
