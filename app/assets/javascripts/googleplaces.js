@@ -1,7 +1,7 @@
 function initialize() {
   var mapOptions = {
-    center: {lat: -33.8688, lng: 151.2195},
-    zoom: 13,
+    center: {lat: 36.2048, lng: 138.2529},
+    zoom: 1,
     scrollwheel: false
   };
   var map = new google.maps.Map(document.getElementById('map'),
@@ -50,7 +50,6 @@ function initialize() {
     marker.setVisible(true);
 
     infowindow.setContent('<div><strong>' + place.name + '</strong><br>' +
-        'Place ID: ' + place.place_id + '<br>' +
         place.formatted_address + '</div>');
     infowindow.open(map, marker);
   });
