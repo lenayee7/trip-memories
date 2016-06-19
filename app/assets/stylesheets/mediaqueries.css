@@ -1,5 +1,9 @@
 @media (max-width: 1000px) {
 
+  .container {
+    width: 100%;
+  }
+
   .trip-index-div {
     margin: 0 auto;
   }
@@ -21,18 +25,21 @@
 
 @media (max-width: 810px) {
 
-  .show-container {
+  .container {
     width: 100%;
   }
 
-  .trip-index-div {
-    padding-left: 10%;
-    padding-right: 10%;
+  .post-div .post-img {
+    max-height: auto;
   }
 
   .trip-div {
     padding: 0 1% 1%;
     min-height: 0;
+  }
+
+  .post-div {
+    margin-bottom: 2%;
   }
 
   .login-signup {
@@ -87,10 +94,6 @@
 
   .trip-div {
     padding: 2% 0;
-  }
-
-  .show-container {
-    width: 100%;
   }
 
   .trip-index-div {
@@ -223,7 +226,7 @@
   .trip-index-div {
     max-width: 100%;
   }
-  
+
   .post-div {
     margin-bottom: 2%;
   }
