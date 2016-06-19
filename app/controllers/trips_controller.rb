@@ -11,6 +11,15 @@ class TripsController < ApplicationController
 	  render json: @trip_coords
 	end
 
+	def get_photos
+		@trip = current_user.trips.find(params[:id])
+		@posts = @trip.posts.order(created_at: :desc)
+		@photos = @posts.map do |post|
+				[post.image_file_name]
+		end
+		render json: @photos
+	end
+
 	def index
 		@user = current_user
 		@trips = current_user.trips.order(created_at: :desc)

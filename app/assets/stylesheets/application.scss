@@ -14,6 +14,7 @@
  @import "bootstrap-sprockets";
  @import "bootstrap";
 
+ *= require photoswipe
  *= require font-awesome
  *= require main
  *= require_self

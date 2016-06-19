@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   devise_for :users
   get 'profile', to: 'users#show'
   get '/get_coordinates', to: 'trips#get_coordinates'
+  get '/photos', to: 'trips#get_photos'
 
   resources :users
   resources :trips do

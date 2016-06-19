@@ -22,16 +22,17 @@
 @media (max-width: 810px) {
 
   .show-container {
-    width: 600px;
+    width: 100%;
+  }
+
+  .trip-index-div {
+    padding-left: 10%;
+    padding-right: 10%;
   }
 
   .trip-div {
-    padding: 0 8% 1%;
+    padding: 0 1% 1%;
     min-height: 0;
-  }
-
-  .post-div {
-    height: auto;
   }
 
   .login-signup {
@@ -62,16 +63,6 @@
   .post-div {
     height: auto;
   }
-
-  .trip-div {
-    padding: 0 13% 1%;
-    min-height: 0;
-  }
-
-  .trip-index-div {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
   
   .post-img.img-responsive {
     height: auto;
@@ -80,7 +71,6 @@
   .trip-div
   .cover-image {
     width: 100%;
-    /*height: auto;*/
   }
 
   .login {
@@ -141,6 +131,11 @@
 
  .trip-div.col-lg-3.col-md-4.col-sm-6.col-xs-12 {
     padding: 0 2% 2%;
+  }
+
+  .trip-index-div {
+    padding-left: 5%;
+    padding-right: 5%;
   }
 
  .container {
@@ -228,12 +223,7 @@
   .trip-index-div {
     max-width: 100%;
   }
-
-  .col-xs-12 {
-    padding-right: 15px;
-    padding-left: 15px;
-  }
-
+  
   .post-div {
     margin-bottom: 2%;
   }

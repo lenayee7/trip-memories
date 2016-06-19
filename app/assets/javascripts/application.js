@@ -10,6 +10,7 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 
+//= require photoswipe
 //= require bootstrap/dropdown
 //= require jquery
 //= require jquery.turbolinks
