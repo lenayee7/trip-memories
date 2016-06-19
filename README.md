@@ -1,7 +1,7 @@
 
 ## Trip-Memories
 
-* Ruby version - ruby 2.3.0
+* Ruby version - ruby 2.4.0
 
 ## MVP
 - [X] Create User Account 
@@ -10,8 +10,8 @@
 - [X] User can add posts to a trip
 - [X] Models - User, Trip & Post has CRUD functions
 
-####Trip Memories hosted on Heroku-[https://sleepy-beach-27989.herokuapp.com]
-Username: slade@slade.com
+####Heroku-[https://sleepy-beach-27989.herokuapp.com]
+Username: slade@slade.com,
 Password: password
 
 ## Description
