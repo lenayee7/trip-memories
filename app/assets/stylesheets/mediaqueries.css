@@ -63,6 +63,10 @@
 
 @media (max-width: 695px) {
 
+  .steps-img {
+    width: 35%;
+  }
+
   .trip-div.col-lg-3.col-md-4.col-sm-6.col-xs-12 {
     padding: 0 8% 2%;
   }
@@ -91,6 +95,14 @@
 }
 
 @media (max-width: 595px) {
+
+  .post-date {
+    position: relative;
+  }
+
+  .post-edit-trash {
+    float: right;
+  }
 
   .trip-div {
     padding: 2% 0;
@@ -128,10 +140,14 @@
 
 @media (max-width: 525px) {
 
+ .steps-img {
+    width: 35%;
+  }
+
  .trip-div
   .black-box
     .title-link {
-  font-size: 1.5em;
+    font-size: 1.5em;
  }
 
  .map-container {
@@ -209,10 +225,14 @@
 
 @media (max-width: 400px) {
 
-.title-link {
-  font-size: 1em;
- }
+  .title-link {
+    font-size: 1em;
+  }
 
+  .post-index-div {
+    padding-left: 2%;
+    padding-right: 2%
+  }
 
   .trip-div.col-lg-3.col-md-4.col-sm-6.col-xs-12 {
     padding: 1% 2%;

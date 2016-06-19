@@ -23,10 +23,10 @@ Trip Memories allows you to save your highlights by creating posts with photos &
 <img src="https://s3.amazonaws.com/trip-memories/login-signup2.jpg" alt="Sign Up" width="60%" />
 ####2. My Trips Page
 
-<img src="https://s3.amazonaws.com/trip-memories/googlemap.jpg" alt="Trips Index" width="60%" />
+<img src="https://s3.amazonaws.com/trip-memories/trips-index3.jpg" alt="Trips Index" width="60%" />
 ####3. Posts Page
 
-<img src="https://s3.amazonaws.com/trip-memories/posts-index.jpg" alt="Posts Index" width="60%" />
+<img src="https://s3.amazonaws.com/trip-memories/posts-index3.jpg" alt="Posts Index" width="60%" />
 
 ###Technologies
 * Ruby on Rails 
