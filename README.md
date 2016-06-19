@@ -10,9 +10,7 @@
 - [X] User can add posts to a trip
 - [X] Models - User, Trip & Post has CRUD functions
 
-# TripMemories
-
-#### Heroku-[https://sleepy-beach-27989.herokuapp.com]
+####Trip Memories hosted on Heroku-[https://sleepy-beach-27989.herokuapp.com]
 Username: slade@slade.com
 Password: password
 
