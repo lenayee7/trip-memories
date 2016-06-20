@@ -1,12 +1,16 @@
 @media (max-width: 1000px) {
 
+  .post-index-div {
+    width: 800px;
+  }
+
   .container {
     width: 100%;
   }
 
-  .trip-index-div {
+/*  .trip-index-div {
     margin: 0 auto;
-  }
+  }*/
 
   .logo {
     margin-bottom: 2%;
@@ -25,9 +29,21 @@
 
 @media (max-width: 810px) {
 
-  .container {
+  .post-date {
+    position: relative;
+  }
+
+  .post-edit-trash {
+    float: right;
+  }
+
+  .post-index-div {
     width: 100%;
   }
+
+ /* .container {
+    width: 100%;
+  }*/
 
   .post-div .post-img {
     max-height: auto;
@@ -57,6 +73,14 @@
 
   .round-image-50.avatar {
     width: 7%
+  }
+
+}
+
+@media (max-width: 768px) {
+
+   .post-index-div {
+    width: 500px;
   }
 
 }
@@ -96,14 +120,6 @@
 
 @media (max-width: 595px) {
 
-  .post-date {
-    position: relative;
-  }
-
-  .post-edit-trash {
-    float: right;
-  }
-
   .trip-div {
     padding: 2% 0;
   }
@@ -112,8 +128,18 @@
     width: 100%;
   }
 
+  .post-index-div {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .post-div .post-img {
+    max-height: none;
+    min-height: none;
+  }
+
   a{
-    font-size: 1em;
+    font-size: 1.1em;
   }
 
   .logo {
