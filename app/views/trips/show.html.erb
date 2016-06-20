@@ -33,12 +33,11 @@
   	<% end %>
   </div>
 </div>
-<a href="#top"><span class="glyphicon glyphicon-triangle-top arrows"></span></a>
 
 <div class="edit-trash" id="bottom">
-<%= link_to 'Edit Trip', edit_trip_path(@trip), class: "nav-back"  %>
- 
-<%= link_to 'Delete', trip_path(@trip), :method => :delete, data: {confirm: "Are you sure?"}, class: "nav-back" %>
+  <p><a href="#top"><span class="glyphicon glyphicon-triangle-top arrows"></span></a></p>
+  <%= link_to 'Edit Trip', edit_trip_path(@trip), class: "nav-back"  %>
+  <%= link_to 'Delete', trip_path(@trip), :method => :delete, data: {confirm: "Are you sure?"}, class: "nav-back" %>
 </div>
 
 
